@@ -1,0 +1,174 @@
+body {
+    background-color: #E9EBEE;
+}
+
+/* login */
+.main {
+    margin-top: 15px;
+}
+
+.main .d-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.box-left,
+.box-right {
+    margin: 0px 25px;
+}
+
+.box-right {
+    padding: 10px 20px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 365px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-phone {
+        display: none;
+    }
+}
+
+/* index */
+
+.header {
+    height: 55px;
+}
+
+.header .search-box,
+.my-box {
+    padding-top: 10px;
+}
+
+.f-right {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    float: right;
+}
+
+.user-avt {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.my-box .f-right a {
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.challenge-box a {
+    text-decoration: none;
+}
+
+.post-box {
+    margin-top: 15px;
+}
+
+.add-post {
+    text-align: center;
+}
+
+.add-post button {
+    width: 100%;
+}
+
+.challenge-box,
+.hint-friend-box,
+.add-post {
+    margin-top: 30px;
+}
+
+.post-box .post {
+    margin: 0px 0px 20px 0px;
+    padding: 20px 20px;
+}
+
+.post-box .post-option a {
+    color: black;
+}
+
+.post-box .post .auth {
+    position: relative;
+}
+
+.post .auth img {
+    margin-top: 10px;
+}
+
+.post-box .post .auth .created-date {
+    position: absolute;
+    top: 40px;
+    left: 55px;
+}
+
+.post-box .post .auth a {
+    text-decoration: none;
+}
+
+.post .content {
+    margin-top: 20px;
+}
+
+.post .content img {
+    cursor: pointer;
+}
+
+.post .content .post-caption {
+    margin-bottom: 5px;
+}
+
+.post-action {
+    border-top: 1px solid #dadde1;
+    border-bottom: 1px solid #dadde1;
+    margin-top: 10px;
+}
+
+.post-action a {
+    color: #606770;
+}
+
+.my-comment {
+    display: flex;
+    align-items: baseline;
+    padding: 5px 0px;
+}
+
+.my-comment input[type=text] {
+    max-width: 435px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.comment-box .other-comment a {
+    text-decoration: none;
+}
+
+.challenge-box,
+.hint-friend-box,
+.category-box {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-attachment: fixed;
+}
+
+.hint-friend-box .table a {
+    text-decoration: none;
+}
+
+.hint-friend-box .table .btn-add-friend {
+    padding-top: 15px;
+    width: 40px;
+}
+
+.category-box .category a {
+    margin: 2px 0px;
+}
+
+@media only screen and (max-width: 600px) {}

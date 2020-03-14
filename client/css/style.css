@@ -155,7 +155,6 @@ body {
 .category-box {
     margin-bottom: 20px;
     padding: 10px 15px;
-    background-attachment: fixed;
 }
 
 .hint-friend-box .table a {
@@ -171,4 +170,10 @@ body {
     margin: 2px 0px;
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .challenge-box,
+    .hint-friend-box,
+    .category-box {
+        display: none;
+    }
+}

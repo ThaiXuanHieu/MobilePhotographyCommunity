@@ -1,19 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="./fonts/fontawesome-pro-5.11.2-web/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-pro-5.11.2-web/css/all.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-filestyle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Thái Xuân Hiếu</title>
 </head>
 
 <body>
-    data-classIcon="glyphicon glyphicon-picture" data-input="false" data-buttonText="Thêm ảnh"
+    <header class="header bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="logo jumbToHome" style="padding-top: 3px;">
+                        <a href="index.html">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-4 search-box">
+                    <form action="" method="post">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm" id="txtSearch" name="search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i
+                                        class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="col-sm-4 jumbToLogin">
+                    <a href="login.html" class="btn btn-primary" style="float: right;">Đăng nhập</a>
+                </div> -->
+
+                <div class="col-xs-4 my-box">
+                    <div class="f-right">
+                        <a href=""><img class="user-avt" src="./img/auth/avatar.png" style="width: 40px; height: 40px;"
+                                alt=""></a>
+                        <a href=""><i class="fal fa-user-friends fa-lg" style="color: black;"></i><sup
+                                style="color: red;">2</sup></a>
+                        <!-- Popover -->
+                        <a href="#" id="notification" data-toggle="popover"><i class="fal fa-bell fa-lg"
+                                style="color: black;"></i><sup style="color: red;">3</sup></a>
+
+                        <div style="display:none" class="list">
+                            <ul>
+                                <li style="list-style-type: none;">
+                                    <p>Thái Xuân Hiếu đã bình luận về bài viết của bạn</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /Popover -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 avt-box">
+                    <div class="bg-white center">
+                        <img src="./img/auth/avatar.png" alt="" width="200px" height="200px">
+                    </div>
+                </div>
+                <div class="col-sm-8 detail-info">
+                    <div class="user-info">
+                        <div class="user-name">
+                            <h3>Thái Xuân Hiếu</h3>
+                        </div>
+                        <div class="verified"><i class="fal fa-check-circle"></i></div>
+                        <div class="friend-status">
+                            <a href="#" class="btn btn-primary"><i class="fal fa-user-plus"></i> Kết bạn</a>
+                        </div>
+                    </div>
+                    <div class="other-info">
+                        <ul>
+                            <a href=""><li><span><strong>299</strong></span> bài viết</li></a>
+                            <a href=""><li><span><strong>145</strong></span> bạn bè</li></a>
+                            <a href=""><li>Đang theo dõi <span><strong>987</strong></span> người dùng</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </section>
 </body>
 
 </html>

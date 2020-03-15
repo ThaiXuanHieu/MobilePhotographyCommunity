@@ -1,5 +1,5 @@
 body {
-    background-color: #E9EBEE;
+    background-color: #FAFAFA;
 }
 
 /* login */
@@ -171,9 +171,71 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+
     .challenge-box,
     .hint-friend-box,
     .category-box {
         display: none;
     }
+}
+
+/* profile */
+
+#profile {
+    margin-top: 30px;
+}
+
+#profile .row {
+    height: 210px;
+}
+
+#profile .avt-box {
+    display: block;
+    padding: 0px 90px;
+}
+
+.avt-box .center {
+    width: 210px;
+    height: 210px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+.detail-info .user-info {
+    display: flex;
+}
+
+.user-info .user-name,
+.verified,
+.friend-status {
+    margin-right: 20px;
+}
+
+.user-info .verified {
+    padding-top: 25px;
+}
+
+.user-info .friend-status {
+    padding-top: 15px;
+}
+
+.detail-info .other-info {
+    margin-top: 20px;
+}
+
+.detail-info .other-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.detail-info .other-info ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+.detail-info .other-info ul a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #262626;
 }

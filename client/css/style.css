@@ -45,7 +45,7 @@ body {
     padding-top: 10px;
 }
 
-.f-right {
+.my-box .f-right {
     display: flex;
     justify-content: center;
     align-items: baseline;

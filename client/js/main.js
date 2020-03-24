@@ -10,6 +10,6 @@ $('#upload-img').change(function(e){
     //     path = path.substring(12);
     // } // Remove c:\fake at beginning from localhost chrome
     var location = URL.createObjectURL(e.target.files[0]);
-    $('.post-img-preview').attr('src', location);
+    $('.img-preview').attr('src', location);
     $('#txtPath').val(location);
 });

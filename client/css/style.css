@@ -69,6 +69,13 @@ body {
     margin-top: 30px;
 }
 
+.challenge-box,
+.post,
+.hint-friend-box,
+.category-box {
+    border-radius: 5px;
+}
+
 .col-right {
     padding: 0px;
 }
@@ -88,6 +95,41 @@ body {
 .add-post button {
     width: 100%;
 }
+
+.region-img-preview {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.region-img-preview .img-preview {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.region-img-preview .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.region-img-preview:hover .img-preview {
+    opacity: 0.3;
+}
+
+.region-img-preview:hover .middle {
+    opacity: 1;
+}
+
 
 .post-box .post {
     padding: 20px 20px;
@@ -164,7 +206,8 @@ body {
     width: 40px;
 }
 
-.hint-friend-box, .category-box {
+.hint-friend-box,
+.category-box {
     padding: 10px 10px 0px 10px;
     margin-bottom: 10px;
 }
@@ -256,8 +299,8 @@ body {
 .nav-tabs.nav-justified>.active>a:hover {
     color: black;
     cursor: default;
-    background-color: #FAFAFA;
-    border-bottom-color: #FAFAFA;
+    background-color: #E9EBEE;
+    border-bottom-color: #E9EBEE;
 }
 
 .tab-content .d-flex {
@@ -270,8 +313,36 @@ body {
     margin: 0 20px;
 }
 
-.tab-content .photo-user {
+.photo-box {
+    position: relative;
     width: 300px;
     height: 300px;
-    cursor: pointer;
+    overflow: hidden;
+}
+
+.photo-box .photo-user {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.photo-box .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.photo-box:hover .photo-user {
+    opacity: 0.3;
+}
+
+.photo-box:hover .middle {
+    opacity: 1;
 }

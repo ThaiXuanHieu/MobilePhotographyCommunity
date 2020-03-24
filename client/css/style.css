@@ -1,5 +1,5 @@
 body {
-    background-color: #FAFAFA;
+    background-color: #E9EBEE;
 }
 
 /* login */
@@ -63,6 +63,16 @@ body {
     text-decoration: none;
 }
 
+.col-left,
+.col-center,
+.col-right {
+    margin-top: 30px;
+}
+
+.col-right {
+    padding: 0px;
+}
+
 .challenge-box a {
     text-decoration: none;
 }
@@ -79,15 +89,9 @@ body {
     width: 100%;
 }
 
-.challenge-box,
-.hint-friend-box,
-.add-post {
-    margin-top: 30px;
-}
-
 .post-box .post {
-    margin: 0px 0px 20px 0px;
     padding: 20px 20px;
+    margin-bottom: 15px;
 }
 
 .post-box .post-option a {
@@ -120,8 +124,8 @@ body {
     cursor: pointer;
 }
 
-.post .content .post-caption {
-    margin-bottom: 5px;
+.post .count-liked-commented {
+    padding-top: 5px;
 }
 
 .post-action {
@@ -150,12 +154,6 @@ body {
     text-decoration: none;
 }
 
-.challenge-box,
-.hint-friend-box,
-.category-box {
-    margin-bottom: 20px;
-    padding: 10px 15px;
-}
 
 .hint-friend-box .table a {
     text-decoration: none;
@@ -164,6 +162,15 @@ body {
 .hint-friend-box .table .btn-add-friend {
     padding-top: 15px;
     width: 40px;
+}
+
+.hint-friend-box, .category-box {
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 10px;
+}
+
+.category-box {
+    padding-bottom: 10px;
 }
 
 .category-box .category a {
@@ -208,7 +215,7 @@ body {
 
 .user-info .user-name,
 .verified,
-.friend-status {
+.status-friend {
     margin-right: 20px;
 }
 
@@ -216,7 +223,7 @@ body {
     padding-top: 25px;
 }
 
-.user-info .friend-status {
+.user-info .status-friend {
     padding-top: 15px;
 }
 
@@ -238,4 +245,33 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: #262626;
+}
+
+.photo-gallery {
+    margin-top: 30px;
+}
+
+.nav-tabs.nav-justified>.active>a,
+.nav-tabs.nav-justified>.active>a:focus,
+.nav-tabs.nav-justified>.active>a:hover {
+    color: black;
+    cursor: default;
+    background-color: #FAFAFA;
+    border-bottom-color: #FAFAFA;
+}
+
+.tab-content .d-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tab-content .d-flex #center {
+    margin: 0 20px;
+}
+
+.tab-content .photo-user {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
 }

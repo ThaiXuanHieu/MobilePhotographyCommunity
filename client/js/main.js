@@ -9,7 +9,8 @@ $('#upload-img').change(function(e){
     // if (path.substring(3,11) == 'fakepath') {
     //     path = path.substring(12);
     // } // Remove c:\fake at beginning from localhost chrome
+
+    $('.region-img-preview').css('display', 'block')
     var location = URL.createObjectURL(e.target.files[0]);
-    $('.img-preview').attr('src', location);
-    $('#txtPath').val(location);
+    $('#img-preview').attr('src', location);
 });

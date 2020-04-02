@@ -41,22 +41,93 @@
 
                 <div class="col-xs-4 my-box">
                     <div class="f-right">
-                        <a href="profile.html"><img class="user-avt" src="./img/user/hieuxt.png" style="width: 40px; height: 40px;"
-                                alt=""></a>
-                        <a href=""><i class="fal fa-user-friends fa-lg" style="color: black;"></i><sup
+                        <a class="mr-l-30" href="profile.html"><img class="user-avt" src="./img/user/hieuxt.png"
+                                style="width: 40px; height: 40px;" alt=""></a>
+                        <a class="mr-l-30" href=""><i class="fal fa-user-friends fa-lg"></i><sup
                                 style="color: red;">2</sup></a>
-                        <!-- Popover -->
-                        <a href="#" id="notification" data-toggle="popover"><i class="fal fa-bell fa-lg"
-                                style="color: black;"></i><sup style="color: red;">3</sup></a>
 
-                        <div style="display:none" class="list">
-                            <ul>
-                                <li style="list-style-type: none;">
-                                    <p>Thái Xuân Hiếu đã bình luận về bài viết của bạn</p>
+                        <div class="notification">
+                            <a class="mr-l-30" href="#" id="notification-dropdown" data-toggle="dropdown"><i
+                                    class="fal fa-bell fa-lg"></i><sup style="color: red;">3</sup></a>
+
+                            <!-- Open Notification -->
+                            <ul class="notification-box dropdown-menu dropdown-menu-right"
+                                aria-labelledby="notification-dropdown">
+                                <h5 class="header-box">Thông báo</h5>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="notifiedby-user">
+                                                <img class="user-avt" src="./img/user/anpon.jpg" alt="">
+                                            </div>
+                                            <div class="notification-content">
+                                                <div><span>An Pon</span> đã bình luận về bài viết của bạn</div>
+                                                <div>02/04/2020</div>
+                                            </div>
+                                            <div class="notifiedby-img">
+                                                <img src="./img/post-img/hoacuc.jpg" alt=""
+                                                    style="width: 50px; height: 50px;">
+                                            </div>
+                                        </div>
+                                    </a>
                                 </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="notifiedby-user">
+                                                <img class="user-avt" src="./img/user/anpon.jpg" alt="">
+                                            </div>
+                                            <div class="notification-content">
+                                                <div><span>An Pon</span> đã thích về bài viết của bạn</div>
+                                                <div>02/04/2020</div>
+                                            </div>
+                                            <div class="notifiedby-img">
+                                                <img src="./img/post-img/chuonchuon.jpg" alt=""
+                                                    style="width: 50px; height: 50px;">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="notifiedby-user">
+                                                <img class="user-avt" src="./img/user/anpon.jpg" alt="">
+                                            </div>
+                                            <div class="notification-content">
+                                                <div><span>An Pon</span> đã thích về bài viết của bạn</div>
+                                                <div>02/04/2020</div>
+                                            </div>
+                                            <div class="notifiedby-img">
+                                                <img src="./img/post-img/cuabien.jpg" alt=""
+                                                    style="width: 50px; height: 50px;">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <div style="text-align: center;">
+                                    <a class="view-more" href="#" style="text-decoration: none;">Xem thêm</a>
+                                </div>
                             </ul>
+                            <!-- End Notification -->
                         </div>
-                        <!-- /Popover -->
+
+                        <div class="setting">
+                            <a class="mr-l-30" href="#" id="setting-dropdown" data-toggle="dropdown"><i
+                                    class="fal fa-caret-down"></i></a>
+                            <!-- Open Option -->
+                            <ul class="setting-box dropdown-menu dropdown-menu-right"
+                                aria-labelledby="setting-dropdown">
+                                <li><a href="#"><i class="fal fa-cog"></i> Cài đặt</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html"><i class="fal fa-sign-out-alt"></i> Đăng xuất</a></li>
+                            </ul>
+                            <!-- End Option -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,7 +138,7 @@
         <div class="container">
             <div class="col-sm-3 col-left challenge-box bg-white">
                 <h4 class="title-box">Thử thách</h4>
-                <table class="table table-hover">
+                <table class="table">
                     <thead>
                         <tr>
                             <th>Tên thử thách</th>
@@ -100,7 +171,7 @@
                             <td><a href=""><span class="label label-danger">Đã kết thúc</span></a></td>
                         </tr>
                         <tr style="text-align: center;">
-                            <td colspan="2"><a href="">Xem thêm</a></td>
+                            <td colspan="2"><a class="view-more" href="">Xem thêm</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -129,8 +200,8 @@
                                         <div class="form-group">
                                             <input type="file" id="upload-img" class="filestyle">
                                         </div>
-                                        <div class="region-img-preview">
-                                            <img class="img-preview" src="" alt="" width="100%">
+                                        <div class="region-img-preview" style="display: none;">
+                                            <img id="img-preview" src="" alt="" width="100%">
                                             <div class="middle">
                                                 <a href="#" style="color: black;"><i class="fal fa-trash-alt"></i></a>
                                             </div>
@@ -153,7 +224,7 @@
                                 <img class="user-avt" src="./img/user/hieuxt.png" alt="">
                                 <h3 class="auth-name" style="display: inline;">Thái Xuân Hiếu</h3>
                             </a>
-                            <p class="created-date">10/03/2020</p>
+                            <div class="created-date">10/03/2020</div>
 
                             <div class="dropdown post-option" style="float: right;">
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">
@@ -177,10 +248,13 @@
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
-                                <div class="col-xs-4"><a class="btn"><i class="fal fa-thumbs-up"></i> Thích</a></div>
-                                <div class="col-xs-4"><a class="btn"><i class="fal fa-comment-alt"></i> Bình luận</a>
+                                <div class="col-xs-4"><a class="btn btn-like"><i class="fal fa-thumbs-up"></i> Thích</a>
                                 </div>
-                                <div class="col-xs-4"><a class="btn"><i class="fal fa-share-square"></i> Chia sẻ</a>
+                                <div class="col-xs-4"><a class="btn btn-comment"><i class="fal fa-comment-alt"></i> Bình
+                                        luận</a>
+                                </div>
+                                <div class="col-xs-4"><a class="btn btn-share"><i class="fal fa-share-square"></i> Chia
+                                        sẻ</a>
                                 </div>
                             </div>
                         </div>
@@ -201,11 +275,14 @@
                                 </div>
                             </div>
                             <div class="other-comment">
-                                <a href="">
-                                    <img class="user-avt" src="./img/user/hieuxt.png" alt="">
-                                    <h4 class="name" style="display: inline;">Thái Xuân Hiếu</h4>
-                                </a>
-                                <p class="comment">Quá đẹp</p>
+                                <div class="commentedby">
+                                    <a href="#">
+                                        <img class="user-avt" src="./img/user/hieuxt.png" alt="">
+                                        <h4 class="name" style="display: inline;">Thái Xuân Hiếu</h4>
+                                        <div class="commented-time">02/04/2020</div>
+                                    </a>
+                                </div>
+                                <div class="comment-content">Quá đẹp </div>
                             </div>
                         </div>
                     </div>
@@ -215,7 +292,7 @@
                                 <img class="user-avt" src="./img/user/anpon.jpg" alt="">
                                 <h3 class="auth-name" style="display: inline;">An Pon</h3>
                             </a>
-                            <p class="created-date">10/03/2020</p>
+                            <div class="created-date">10/03/2020</div>
                             <div class="dropdown post-option" style="float: right;">
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">
                                     <i class="fal fa-ellipsis-v fa-2x"></i>
@@ -259,11 +336,14 @@
                                 </div>
                             </div>
                             <div class="other-comment">
-                                <a href="">
-                                    <img class="user-avt" src="./img/user/hieuxt.png" alt="">
-                                    <h4 class="name" style="display: inline;">Thái Xuân Hiếu</h4>
-                                </a>
-                                <p class="comment">Quá đẹp</p>
+                                <div class="commentedby">
+                                    <a href="#">
+                                        <img class="user-avt" src="./img/user/hieuxt.png" alt="">
+                                        <h4 class="name" style="display: inline;">Thái Xuân Hiếu</h4>
+                                        <div class="commented-time">02/04/2020</div>
+                                    </a>
+                                </div>
+                                <div class="comment-content">Quá đẹp </div>
                             </div>
                         </div>
                     </div>
@@ -273,7 +353,7 @@
                                 <img class="user-avt" src="./img/user/hieuxt.png" alt="">
                                 <h3 class="auth-name" style="display: inline;">Thái Xuân Hiếu</h3>
                             </a>
-                            <p class="created-date">10/03/2020</p>
+                            <div class="created-date">10/03/2020</div>
                             <div class="dropdown post-option" style="float: right;">
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">
                                     <i class="fal fa-ellipsis-v fa-2x"></i>
@@ -317,11 +397,14 @@
                                 </div>
                             </div>
                             <div class="other-comment">
-                                <a href="">
-                                    <img class="user-avt" src="./img/user/hieuxt.png" alt="">
-                                    <h4 class="name" style="display: inline;">Thái Xuân Hiếu</h4>
-                                </a>
-                                <p class="comment">Quá đẹp</p>
+                                <div class="commentedby">
+                                    <a href="#">
+                                        <img class="user-avt" src="./img/user/hieuxt.png" alt="">
+                                        <h4 class="name" style="display: inline;">Thái Xuân Hiếu</h4>
+                                        <div class="commented-time">02/04/2020</div>
+                                    </a>
+                                </div>
+                                <div class="comment-content">Quá đẹp </div>
                             </div>
                         </div>
                     </div>
@@ -331,7 +414,7 @@
                                 <img class="user-avt" src="./img/user/hieuxt.png" alt="">
                                 <h3 class="auth-name" style="display: inline;">Thái Xuân Hiếu</h3>
                             </a>
-                            <p class="created-date">10/03/2020</p>
+                            <div class="created-date">10/03/2020</div>
                             <div class="dropdown post-option" style="float: right;">
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">
                                     <i class="fal fa-ellipsis-v fa-2x"></i>
@@ -375,11 +458,14 @@
                                 </div>
                             </div>
                             <div class="other-comment">
-                                <a href="">
-                                    <img class="user-avt" src="./img/user/hieuxt.png" alt="">
-                                    <h4 class="name" style="display: inline;">Thái Xuân Hiếu</h4>
-                                </a>
-                                <p class="comment">Quá đẹp</p>
+                                <div class="commentedby">
+                                    <a href="#">
+                                        <img class="user-avt" src="./img/user/hieuxt.png" alt="">
+                                        <h4 class="name" style="display: inline;">Thái Xuân Hiếu</h4>
+                                        <div class="commented-time">02/04/2020</div>
+                                    </a>
+                                </div>
+                                <div class="comment-content">Quá đẹp </div>
                             </div>
                         </div>
                     </div>
@@ -389,7 +475,7 @@
                                 <img class="user-avt" src="./img/user/hieuxt.png" alt="">
                                 <h3 class="auth-name" style="display: inline;">Thái Xuân Hiếu</h3>
                             </a>
-                            <p class="created-date">10/03/2020</p>
+                            <div class="created-date">10/03/2020</div>
                             <div class="dropdown post-option" style="float: right;">
                                 <a class="dropdown-toggle" href="#" data-toggle="dropdown">
                                     <i class="fal fa-ellipsis-v fa-2x"></i>
@@ -433,11 +519,14 @@
                                 </div>
                             </div>
                             <div class="other-comment">
-                                <a href="">
-                                    <img class="user-avt" src="./img/user/hieuxt.png" alt="">
-                                    <h4 class="name" style="display: inline;">Thái Xuân Hiếu</h4>
-                                </a>
-                                <p class="comment">Quá đẹp</p>
+                                <div class="commentedby">
+                                    <a href="#">
+                                        <img class="user-avt" src="./img/user/hieuxt.png" alt="">
+                                        <h4 class="name" style="display: inline;">Thái Xuân Hiếu</h4>
+                                        <div class="commented-time">02/04/2020</div>
+                                    </a>
+                                </div>
+                                <div class="comment-content">Quá đẹp </div>
                             </div>
                         </div>
                     </div>
@@ -447,7 +536,7 @@
                 <div class="hint-friend-box bg-white">
                     <h4 class="title-box">Gợi ý kết bạn</h4>
                     <div>
-                        <table class="table table-hover">
+                        <table class="table">
                             </thead>
                             <tbody>
                                 <tr>

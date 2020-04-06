@@ -36,11 +36,11 @@ body {
 
 /* index */
 
-.header {
+#header {
     height: 55px;
 }
 
-.header .search-box,
+#header .search-box,
 .my-box {
     padding-top: 10px;
 }
@@ -71,15 +71,15 @@ body {
     padding-left: 20px;
 }
 
+.notification-box .d-flex {
+    display: flex;
+    flex-direction: row;
+}
+
 .notification-content {
     padding: 5px 10px;
     margin-right: 20px;
     width: 247px;
-}
-
-.notification-box .d-flex {
-    display: flex;
-    flex-direction: row;
 }
 
 .notifiedby-img img {
@@ -89,14 +89,23 @@ body {
 .col-left,
 .col-center,
 .col-right {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .challenge-box,
+.category-box,
 .post,
 .hint-friend-box,
-.category-box {
+.list-friend-box {
     border-radius: 5px;
+}
+
+.challenge-box, .list-friend-box {
+    padding: 10px 10px 0px 10px;
+}
+
+.col-left {
+    padding: 0px;
 }
 
 .col-right {
@@ -105,6 +114,11 @@ body {
 
 .challenge-box a {
     text-decoration: none;
+}
+
+.challenge-box a span.label {
+    float: right;
+    width: 87px;
 }
 
 .post-box {
@@ -218,6 +232,10 @@ body {
 
 .comment-box .other-comment {
     display: flex;
+    background-color: #E9EBEE;
+    border-radius: 5px;
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 5px;
 }
 
 .comment-box .other-comment a {
@@ -244,6 +262,7 @@ body {
 
 .hint-friend-box .table a {
     text-decoration: none;
+    font-size: 15px;
 }
 
 .hint-friend-box .table .btn-add-friend {
@@ -263,6 +282,41 @@ body {
 
 .category-box .category a {
     margin: 2px 0px;
+}
+
+.list-friend-box {
+    padding-bottom: 10px;
+}
+
+.list-friend-box .overflow-auto {
+    height: 300px;
+    overflow: auto;
+}
+
+.list-friend-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-friend-box ul li {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.list-friend-box ul li a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.list-friend-box ul li a img {
+    margin-right: 5px;
+}
+
+.list-friend-box ul li a span.label {
+    float: right;
+    margin: 10px 0px;
+    width: 70px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -371,7 +425,11 @@ body {
     width: 300px;
     height: 300px;
     overflow: hidden;
+}
 
+.photo-box a {
+    color: black;
+    font-size: 15px;
 }
 
 .photo-box .photo-user {
@@ -393,6 +451,10 @@ body {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.photo-box .middle span {
+    margin: 0px 5px;
 }
 
 .photo-box:hover .photo-user {

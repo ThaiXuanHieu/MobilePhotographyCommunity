@@ -231,10 +231,9 @@ body {
 }
 
 .comment-box .other-comment {
-    display: flex;
     background-color: #E9EBEE;
-    border-radius: 5px;
-    padding: 5px 0px 5px 5px;
+    border-radius: 30px;
+    padding: 5px 5px 10px 5px;
     margin-bottom: 5px;
 }
 
@@ -245,7 +244,7 @@ body {
 .comment-box .other-comment .commentedby {
     position: relative;
     margin-right: 10px;
-    width: 190px;
+    float: left;
 }
 
 .comment-box .other-comment .commented-time {
@@ -255,8 +254,7 @@ body {
 }
 
 .comment-box .other-comment .comment-content {
-    margin: 12px 0px;
-    width: 310px;
+    margin: 12px 0px 12px 10px;
     word-wrap: break-word;
 }
 
@@ -289,7 +287,7 @@ body {
 }
 
 .list-friend-box .overflow-auto {
-    height: 300px;
+    height: 315px;
     overflow: auto;
 }
 

@@ -24,6 +24,10 @@ body {
     width: 365px;
 }
 
+.box-right a {
+    text-decoration: none;
+}
+
 .bg-white {
     background-color: white;
 }

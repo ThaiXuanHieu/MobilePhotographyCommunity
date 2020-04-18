@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./fonts/fontawesome-pro-5.11.2-web/css/all.min.css">
+    <script src="./js/bootstrap-filestyle.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Admin</title>
+    <link rel="icon" href="./img/page/icon.png" type="image/gif">
+</head>
+
+<body>
+
+    <header id="header" class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="logo jumbToHome" style="padding-top: 3px;">
+                        <a href="index.html">
+                            <img src="./img/page/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-4 search-box">
+                    <form action="" method="post">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm" id="txtSearch" name="search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i
+                                        class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="col-sm-4 jumbToLogin">
+                    <a href="login.html" class="btn btn-primary" style="float: right;">Đăng nhập</a>
+                </div> -->
+
+                <div class="col-xs-4 my-box">
+                    <div class="f-right">
+                        <a class="mr-l-30" href="profile.html"><img class="user-avt" src="./img/user/hieuxt.png"
+                                style="width: 40px; height: 40px;" alt=""></a>
+                        <a class="mr-l-30" href=""><i class="fal fa-user-friends fa-lg"></i><sup
+                                style="color: red;">2</sup></a>
+
+                        <div class="notification">
+                            <a class="mr-l-30" href="#" id="notification-dropdown" data-toggle="dropdown"><i
+                                    class="fal fa-bell fa-lg"></i><sup style="color: red;">3</sup></a>
+
+                            <!-- Open Notification -->
+                            <ul class="notification-box dropdown-menu dropdown-menu-right"
+                                aria-labelledby="notification-dropdown">
+                                <h5 class="header-box">Thông báo</h5>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="notifiedby-user">
+                                                <img class="user-avt" src="./img/user/anpon.jpg" alt="">
+                                            </div>
+                                            <div class="notification-content">
+                                                <div><span>An Pon</span> đã bình luận về bài viết của bạn</div>
+                                                <div>02/04/2020</div>
+                                            </div>
+                                            <div class="notifiedby-img">
+                                                <img src="./img/post-img/hoacuc.jpg" alt=""
+                                                    style="width: 50px; height: 50px;">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="notifiedby-user">
+                                                <img class="user-avt" src="./img/user/satang.jpg" alt="">
+                                            </div>
+                                            <div class="notification-content">
+                                                <div><span>Sa Tăng</span> đã thích về bài viết của bạn</div>
+                                                <div>02/04/2020</div>
+                                            </div>
+                                            <div class="notifiedby-img">
+                                                <img src="./img/post-img/chuonchuon.jpg" alt=""
+                                                    style="width: 50px; height: 50px;">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div class="d-flex">
+                                            <div class="notifiedby-user">
+                                                <img class="user-avt" src="./img/user/trubatgioi.jpg" alt="">
+                                            </div>
+                                            <div class="notification-content">
+                                                <div><span>Trư Bát Giới</span> đã thích về bài viết của bạn</div>
+                                                <div>02/04/2020</div>
+                                            </div>
+                                            <div class="notifiedby-img">
+                                                <img src="./img/post-img/cuabien.jpg" alt=""
+                                                    style="width: 50px; height: 50px;">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <div style="text-align: center;">
+                                    <a class="view-more" href="#" style="text-decoration: none;">Xem thêm</a>
+                                </div>
+                            </ul>
+                            <!-- End Notification -->
+                        </div>
+
+                        <div class="setting">
+                            <a class="mr-l-30" href="#" id="setting-dropdown" data-toggle="dropdown"><i
+                                    class="fal fa-caret-down"></i></a>
+                            <!-- Open Option -->
+                            <ul class="setting-box dropdown-menu dropdown-menu-right"
+                                aria-labelledby="setting-dropdown">
+                                <li><a href="#"><i class="fal fa-cog"></i> Cài đặt</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html"><i class="fal fa-sign-out-alt"></i> Đăng xuất</a></li>
+                            </ul>
+                            <!-- End Option -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-left">
+                <div class="bg-white">
+                    <div class="pd-15px">
+                        <div class="vertical-menu ">
+                            <button class="btn"><i class="fal fa-bars fa-lg"></i></button>
+                            <a href="index.html"><i class="fal fa-home" style="width: 20px; margin-right: 15px"></i>
+                                Trang chủ</a>
+                            <a href="overview.html"><i class="fal fa-file-search"
+                                    style="width: 20px; margin-right: 15px"></i> Tổng quan</a>
+                            <a href="user.html"><i class="fal fa-users" style="width: 20px; margin-right: 15px"></i>
+                                Quản lý người dùng</a>
+                            <a href="category.html"><i class="fal fa-table" style="width: 20px; margin-right: 15px"></i>
+                                Quản lý chủ đề</a>
+                            <a data-toggle="collapse" href="#challenge-menu"><i class="fal fa-running"
+                                    style="width: 20px; margin-right: 15px"></i> Quản lý thử thách <i
+                                    style="margin-left: 15px;" class="fal fa-caret-down"></i></a>
+                            <div id="challenge-menu" class="collapse">
+                                <ul>
+                                    <li><a href="challenge.html">Thử thách</a></li>
+                                    <li><a href="challenge-detail.html">Tham gia thử thách</a></li>
+                                </ul>
+                            </div>
+                            <a href="setting.html"><i class="fal fa-cog" style="width: 20px; margin-right: 15px"></i>
+                                Cài đặt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9 col-main">
+                <div class="bg-white">
+                    <div class="content-manage">
+                        <h1 class="title-content">Người dùng</h1>
+
+                        <div class="row feature">
+                            <div class="col-xs-4">  
+                                <div class="filter">
+                                    <a href="#" id="filter-dropdown" class="btn btn-primary" data-toggle="dropdown" style="float: left;"><i
+                                            class="fal fa-filter"></i> Lọc</a>
+                                    <!-- Open Option -->
+                                    <ul class="setting-box dropdown-menu dropdown-menu-left"
+                                        aria-labelledby="filter-dropdown">
+                                        <li><a href="#"><i class="fal fa-user-shield"></i> Quản trị viên</a></li>
+                                    </ul>
+                                    <!-- End Option -->
+                                </div>
+
+                                <a href="" class="btn btn-primary" style="float: right; display: none;"><i class="fal fa-user-shield"></i> Cấp quyền Quản trị viên</a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="" id="btnDeleteMulti" class="btn btn-danger" title="Xóa"
+                                    style="float: right; margin-right: 10px; display: none;"><i class="fal fa-trash-alt"></i> Xóa</a>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="search-box">
+                                    <form action="" method="post">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Tìm kiếm"
+                                                id="txtSearch" name="CategoryName">
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i
+                                                        class="fal fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-user">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tài khoản</th>
+                                        <th>Số điện thoại</th>
+                                        <th>Email</th>
+                                        <th>Trạng thái</th>
+                                        <th><input type="checkbox" name="" id=""> Chọn</th>
+                                        <th>Chức năng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <img src="./img/user/anpon.jpg" alt=""
+                                                style="width: 40px; height: 40px; border-radius: 50%;">
+                                            <span>An Pon</span>
+                                        </td>
+                                        <td>0147852369</td>
+                                        <td>anpon@gmail.com</td>
+                                        <td><span class="label label-danger">Thoát</span><br>lúc 02:36:12 18/04/2020</td>
+                                        <td><input type="checkbox" name="" id=""></td>
+                                        <td>
+                                            <a href="" class="btn btn-warning" title="Sửa"><i
+                                                    class="fal fa-edit"></i></a>
+                                            <a href="" class="btn btn-danger" title="Xóa"><i
+                                                    class="fal fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <img src="./img/user/hieuxt.png" alt=""
+                                                style="width: 40px; height: 40px; border-radius: 50%;">
+                                            <span>Hiếu XT</span>
+                                        </td>
+                                        <td>0147852369</td>
+                                        <td>hieuxt@gmail.com</td>
+                                        <td><span class="label label-success">Đang hoạt động</span></td>
+                                        <td><input type="checkbox" name="" id=""></td>
+                                        <td>
+                                            <a href="" class="btn btn-warning" title="Sửa"><i
+                                                    class="fal fa-edit"></i></a>
+                                            <a href="" class="btn btn-danger" title="Xóa"><i
+                                                    class="fal fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <img src="./img/user/tonngokhong.jpg" alt=""
+                                                style="width: 40px; height: 40px; border-radius: 50%;">
+                                            <span>Tôn Ngộ Không</span>
+                                        </td>
+                                        <td>0147852369</td>
+                                        <td>tonngokhong@gmail.com</td>
+                                        <td><span class="label label-success">Đang hoạt động</span></td>
+                                        <td><input type="checkbox" name="" id=""></td>
+                                        <td>
+                                            <a href="" class="btn btn-warning" title="Sửa"><i
+                                                    class="fal fa-edit"></i></a>
+                                            <a href="" class="btn btn-danger" title="Xóa"><i
+                                                    class="fal fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <img src="./img/user/trubatgioi.jpg" alt=""
+                                                style="width: 40px; height: 40px; border-radius: 50%;">
+                                            <span>Trư Bát Giới</span>
+                                        </td>
+                                        <td>0147852369</td>
+                                        <td>trubatgioi@gmail.com</td>
+                                        <td><span class="label label-danger">Thoát</span><br>lúc 02:36:12 18/04/2020</td>
+                                        <td><input type="checkbox" name="" id=""></td>
+                                        <td>
+                                            <a href="" class="btn btn-warning" title="Sửa"><i
+                                                    class="fal fa-edit"></i></a>
+                                            <a href="" class="btn btn-danger" title="Xóa"><i
+                                                    class="fal fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>
+                                            <img src="./img/user/satang.jpg" alt=""
+                                                style="width: 40px; height: 40px; border-radius: 50%;">
+                                            <span>Sa Tăng</span>
+                                        </td>
+                                        <td>0147852369</td>
+                                        <td>satang@gmail.com</td>
+                                        <td><span class="label label-danger">Thoát</span><br>lúc 02:36:12 18/04/2020</td>
+                                        <td><input type="checkbox" name="" id=""></td>
+                                        <td>
+                                            <a href="" class="btn btn-warning" title="Sửa"><i
+                                                    class="fal fa-edit"></i></a>
+                                            <a href="" class="btn btn-danger" title="Xóa"><i
+                                                    class="fal fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="pagination">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white">
+        <div class="copyright">Cộng đồng nhiếp ảnh di động - Copyright © Thái Xuân Hiếu 2020 </div>
+    </footer>
+</body>
+
+</html>

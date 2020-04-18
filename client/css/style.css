@@ -365,12 +365,12 @@ body {
 }
 
 .user-info .user-name,
-.verified,
+.is-admin,
 .status-friend {
     margin-right: 20px;
 }
 
-.user-info .verified {
+.user-info .is-admin {
     padding-top: 25px;
 }
 

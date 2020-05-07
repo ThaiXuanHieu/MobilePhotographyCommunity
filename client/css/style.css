@@ -42,6 +42,9 @@ body {
 
 #header {
     height: 55px;
+    position: fixed;
+    width: 100%;
+    z-index: 1030;
 }
 
 #header .search-box,
@@ -93,7 +96,7 @@ body {
 .col-left,
 .col-center,
 .col-right {
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 .challenge-box,
@@ -110,10 +113,20 @@ body {
 
 .col-left {
     padding: 0px;
+    position: fixed;
+    width: 285px;
+}
+
+.col-center{
+    position: relative;
+    left: 292px;
 }
 
 .col-right {
     padding: 0px;
+    position: fixed;
+    right: 175px;
+    width: 285px;
 }
 
 .challenge-box a {
@@ -323,21 +336,19 @@ body {
 
 @media only screen and (max-width: 600px) {
 
-    .challenge-box,
-    .hint-friend-box,
-    .category-box {
+    .col-right, .col-left {
         display: none;
+    }
+    .col-center {
+        left: 0;
     }
 }
 
 /* profile */
 
-#profile {
-    margin-top: 30px;
-}
-
 #profile .row {
     height: 210px;
+    margin-top: 70px;
 }
 
 #profile .avt-box {

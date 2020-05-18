@@ -135,8 +135,8 @@ body {
 .content-manage .ov-box {
     width: 310px;
     height: 150px;
-    margin-right: 25px;
-    border-radius: 10px;
+    margin: 0px 25px 25px 0px;
+    border-left: 4px solid #337ab7;
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
 }
 .ov-box .title-box {

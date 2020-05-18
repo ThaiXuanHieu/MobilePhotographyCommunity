@@ -1,16 +1,20 @@
-$('#upload-img').filestyle({
-    input: false,
-    iconName: 'glyphicon glyphicon-picture',
-    buttonText: 'Thêm ảnh',
-});
+function addImage(input) {
+    if (input.files && input.files[0]) {
+        var filerdr = new FileReader();
+        filerdr.onload = function (e) {
+            document.getElementById("img-preview").src = e.target.result;
+            document.getElementsByClassName("region-img-preview")[0].style.display = "block";
+        }
+        filerdr.readAsDataURL(input.files[0]);
+    }
+}
 
-$('#upload-img').change(function(e){
-    // var path = $('#upload-img').val();
-    // if (path.substring(3,11) == 'fakepath') {
-    //     path = path.substring(12);
-    // } // Remove c:\fake at beginning from localhost chrome
-
-    $('.region-img-preview').css('display', 'block')
-    var location = URL.createObjectURL(e.target.files[0]);
-    $('#img-preview').attr('src', location);
-});
+function uploadAvatar(input) {
+    if (input.files && input.files[0]) {
+        var filerdr = new FileReader();
+        filerdr.onload = function (e) {
+            document.getElementById("avatar").src = e.target.result;
+        }
+        filerdr.readAsDataURL(input.files[0]);
+    }
+}

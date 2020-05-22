@@ -125,6 +125,8 @@
                                 aria-labelledby="setting-dropdown">
                                 <li><a href="#"><i class="fal fa-cog"></i> Cài đặt</a></li>
                                 <li class="divider"></li>
+                                <li><a href="#"><i class="fal fa-comment-alt-edit"></i> Phản hồi</a></li>
+                                <li class="divider"></li>
                                 <li><a href="login.html"><i class="fal fa-sign-out-alt"></i> Đăng xuất</a></li>
                             </ul>
                             <!-- End Option -->
@@ -158,6 +160,10 @@
                                     <li><a href="challenge-detail.html">Tham gia thử thách</a></li>
                                 </ul>
                             </div>
+                            <a href="setting.html"><i class="fal fa-chart-line" style="width: 20px; margin-right: 15px"></i>
+                                Thống kê</a>
+                            <a href="setting.html"><i class="fal fa-comment-alt-edit" style="width: 20px; margin-right: 15px"></i>
+                                Phản hồi</a>
                             <a href="setting.html"><i class="fal fa-cog" style="width: 20px; margin-right: 15px"></i>
                                 Cài đặt</a>
                         </div>
@@ -168,62 +174,69 @@
                 <div class="bg-white">
                     <div class="content-manage">
                         <h1 class="title-content">Trang chủ</h1>
-                        <h3 style="margin-left: 35px;">Tuần vừa qua</h3>
+                        <div style="margin: 20px 0px 0px 35px; width: 250px;">
+                            <select class="form-control">
+                                <option value="">Ngày hôm nay</option>
+                                <option value="">Tuần</option>
+                                <option value="">Tháng</option>
+                                <option value="">Năm</option>
+                            </select>
+                        </div>
                         <div class="row ov">
-                                <div class="col-xs-4 ov-box">
-                                    <div class="ov-user">
-                                        <h2 class="title-box">Người dùng</h2>
-                                        <div style="color: #36b9cc;">
-                                            <i class="fal fa-users fa-4x"></i>
-                                            <span style="float: right; font-size: 45px;">+25</span>
-                                        </div>
+                            <div class="col-xs-4 ov-box">
+                                <div class="ov-user">
+                                    <h2 class="title-box">Người dùng</h2>
+                                    <div style="color: #36b9cc;">
+                                        <i class="fal fa-users fa-4x"></i>
+                                        <span style="float: right; font-size: 45px;">+25</span>
                                     </div>
                                 </div>
-                                <div class="col-xs-4 ov-box">
-                                    <div class="ov-feedback">
-                                        <h2 class="title-box">Task</h2>
-                                        <div style="color: #1cc88a;">
-                                            <i class="fal fa-tasks fa-4x"></i>
-                                            <span style="float: right; font-size: 45px;">+10</span>
-                                        </div>
+                            </div>
+                            <div class="col-xs-4 ov-box">
+                                <div class="ov-feedback">
+                                    <h2 class="title-box">Task</h2>
+                                    <div style="color: #1cc88a;">
+                                        <i class="fal fa-tasks fa-4x"></i>
+                                        <span style="float: right; font-size: 45px;">+10</span>
                                     </div>
                                 </div>
-                                <div class="col-xs-4 ov-box">
-                                    <div class="ov-feedback">
-                                        <h2 class="title-box">Phản hồi</h2>
-                                        <div style="color: #e74a3b;">
-                                            <i class="fal fa-comment-alt-edit fa-4x"></i>
-                                            <span style="float: right; font-size: 45px;">+15</span>
-                                        </div>
+                            </div>
+                            <div class="col-xs-4 ov-box">
+                                <div class="ov-feedback">
+                                    <h2 class="title-box">Phản hồi</h2>
+                                    <div style="color: #e74a3b;">
+                                        <i class="fal fa-comment-alt-edit fa-4x"></i>
+                                        <span style="float: right; font-size: 45px;">+15</span>
                                     </div>
                                 </div>
-                                <div class="col-xs-4 ov-box">
-                                    <div class="ov-post">
-                                        <h2 class="title-box">Bài viết</h2>
-                                        <div style="color: #f6c23e;">
-                                            <i class="fal fa-poll-h fa-4x"></i>
-                                            <span style="float: right; font-size: 45px;">+125</span>
-                                        </div>
+                            </div>
+                            <div class="col-xs-4 ov-box">
+                                <div class="ov-post">
+                                    <h2 class="title-box">Bài viết</h2>
+                                    <div style="color: #f6c23e;">
+                                        <i class="fal fa-poll-h fa-4x"></i>
+                                        <span style="float: right; font-size: 45px;">+125</span>
                                     </div>
                                 </div>
-                                <div class="col-xs-4 ov-box">
-                                    <div class="ov-like">
-                                        <h2 class="title-box">Yêu thích</h2>
-                                        <div style="color: #4e73df;">
-                                            <i class="fal fa-thumbs-up fa-4x"></i>
-                                            <span style="float: right; font-size: 45px;">+490</span>
-                                        </div>
+                            </div>
+                            <div class="col-xs-4 ov-box">
+                                <div class="ov-like">
+                                    <h2 class="title-box">Yêu thích</h2>
+                                    <div style="color: #4e73df;">
+                                        <i class="fal fa-thumbs-up fa-4x"></i>
+                                        <span style="float: right; font-size: 45px;">+490</span>
                                     </div>
                                 </div>
-                                <div class="col-xs-4 ov-box">
-                                    <div class="ov-comment">
-                                        <h2 class="title-box">Bình luận</h2>
-                                        <div style="color: #858796;">
-                                            <i class="fal fa-comment-alt fa-4x"></i>
-                                            <span style="float: right; font-size: 45px;">+385</span>
-                                        </div>
+                            </div>
+                            <div class="col-xs-4 ov-box">
+                                <div class="ov-comment">
+                                    <h2 class="title-box">Bình luận</h2>
+                                    <div style="color: #858796;">
+                                        <i class="fal fa-comment-alt fa-4x"></i>
+                                        <span style="float: right; font-size: 45px;">+385</span>
                                     </div>
                                 </div>
+                            </div>
                             </a>
                         </div>
                     </div>

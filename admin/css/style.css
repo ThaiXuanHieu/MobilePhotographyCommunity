@@ -3,6 +3,11 @@ body {
     font-family: sans-serif;
 }
 
+table thead {
+    background-color: #337ab7;
+    color: white;
+}
+
 .bg-white {
     background-color: white;
 }

@@ -18,3 +18,7 @@ function uploadAvatar(input) {
         filerdr.readAsDataURL(input.files[0]);
     }
 }
+
+function like(){
+    document.querySelector('.btn-like, .btn-like i').style.color = 'blue';
+}

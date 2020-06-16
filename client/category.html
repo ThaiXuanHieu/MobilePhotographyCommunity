@@ -177,15 +177,24 @@
                 <div class="category-box bg-white" style="display: block;">
                     <h4 class="title-box">Chủ đề</h4>
                     <div class="category">
-                        <a href="category.html" type="button" class="btn btn-primary">Khoảnh khắc <span class="badge">45</span></a>
-                        <a href="category.html" type="button" class="btn btn-primary">Macro <span class="badge">35</span></a>
-                        <a href="category.html" type="button" class="btn btn-primary">Black & White <span class="badge">14</span></a>
-                        <a href="category.html" type="button" class="btn btn-primary">Lowkey <span class="badge">22</span></a>
-                        <a href="category.html" type="button" class="btn btn-primary">Phong cảnh <span class="badge">10</span></a>
-                        <a href="category.html" type="button" class="btn btn-primary">Mẫu ảnh <span class="badge">26</span></a>
-                        <a href="category.html" type="button" class="btn btn-primary">Bokeh <span class="badge">34</span></a>
-                        <a href="category.html" type="button" class="btn btn-primary">Ẩm thực <span class="badge">100</span></a>
-                        <a href="category.html" type="button" class="btn btn-primary"><i class="fal fa-ellipsis-h fa-lg"></i></a>
+                        <a href="category.html" type="button" class="btn btn-primary">Khoảnh khắc <span
+                                class="badge">45</span></a>
+                        <a href="category.html" type="button" class="btn btn-primary">Macro <span
+                                class="badge">35</span></a>
+                        <a href="category.html" type="button" class="btn btn-primary">Black & White <span
+                                class="badge">14</span></a>
+                        <a href="category.html" type="button" class="btn btn-primary">Lowkey <span
+                                class="badge">22</span></a>
+                        <a href="category.html" type="button" class="btn btn-primary">Phong cảnh <span
+                                class="badge">10</span></a>
+                        <a href="category.html" type="button" class="btn btn-primary">Mẫu ảnh <span
+                                class="badge">26</span></a>
+                        <a href="category.html" type="button" class="btn btn-primary">Bokeh <span
+                                class="badge">34</span></a>
+                        <a href="category.html" type="button" class="btn btn-primary">Ẩm thực <span
+                                class="badge">100</span></a>
+                        <a href="category.html" type="button" class="btn btn-primary"><i
+                                class="fal fa-ellipsis-h fa-lg"></i></a>
                     </div>
                 </div>
             </div>
@@ -211,7 +220,13 @@
                                                 style="resize: none;"></textarea>
                                         </div>
                                         <div class="form-group">
-                                            <input type="file" id="upload-img" class="filestyle">
+                                            <div class="upload-image" title="Thêm ảnh">
+                                                <label for="icon-input">
+                                                    <i class="fas fa-image fa-2x"></i>
+                                                </label>
+                                                <input id="icon-input" type="file" name="file"
+                                                    accept=".jpg, .png, *.jpeg" onchange="addImage(this)" />
+                                            </div>
                                         </div>
                                         <div class="region-img-preview" style="display: none;">
                                             <img id="img-preview" src="" alt="" width="100%">
@@ -220,11 +235,10 @@
                                                         class="fal fa-trash-alt fa-lg"></i></a>
                                             </div>
                                         </div>
-
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary">Đăng</button>
+                                    <button type="submit" class="btn btn-success">Đăng</button>
                                 </div>
                             </div>
 
@@ -255,7 +269,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">Việt Nam tôi yêu</div>
-                            <div class="post-img"><img src="./img/post-img/vietnam-giotnuoc.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img src="./img/post-img/vietnam-giotnuoc.jpg" alt="" width="100%">
+                            </div>
                         </div>
                         <div class="count-liked-commented">
 
@@ -280,12 +295,12 @@
                                     </a>
                                 </div>
                                 <div class="f-grow-15" style="flex-grow: 15;">
-                                    <form action="" method="post">
-                                        <div class="form-group">
-                                            <input type="text" name="" id="" placeholder="Viết bình luận..."
-                                                class="form-control">
-                                        </div>
-                                    </form>
+
+                                    <div class="form-group">
+                                        <input type="text" name="" id="" placeholder="Viết bình luận..."
+                                            class="form-control">
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="other-comment">
@@ -333,7 +348,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">Việt Nam vô địch</div>
-                            <div class="post-img"><img src="./img/post-img/giotnuoc-vietnam.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img src="./img/post-img/giotnuoc-vietnam.jpg" alt="" width="100%">
+                            </div>
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
@@ -352,12 +368,12 @@
                                     </a>
                                 </div>
                                 <div class="f-grow-15" style="flex-grow: 15;">
-                                    <form action="" method="post">
-                                        <div class="form-group">
-                                            <input type="text" name="" id="" placeholder="Viết bình luận..."
-                                                class="form-control">
-                                        </div>
-                                    </form>
+
+                                    <div class="form-group">
+                                        <input type="text" name="" id="" placeholder="Viết bình luận..."
+                                            class="form-control">
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="other-comment">
@@ -405,7 +421,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">2 bạn chuồn chuồn</div>
-                            <div class="post-img"><img src="./img/post-img/2ban-chuonchuon.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img src="./img/post-img/2ban-chuonchuon.jpg" alt="" width="100%">
+                            </div>
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
@@ -424,12 +441,12 @@
                                     </a>
                                 </div>
                                 <div class="f-grow-15" style="flex-grow: 15;">
-                                    <form action="" method="post">
-                                        <div class="form-group">
-                                            <input type="text" name="" id="" placeholder="Viết bình luận..."
-                                                class="form-control">
-                                        </div>
-                                    </form>
+
+                                    <div class="form-group">
+                                        <input type="text" name="" id="" placeholder="Viết bình luận..."
+                                            class="form-control">
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="other-comment">
@@ -477,7 +494,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">Chuồn chuồn</div>
-                            <div class="post-img"><img src="./img/post-img/chuonchuon-giotnuoc.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img src="./img/post-img/chuonchuon-giotnuoc.jpg" alt="" width="100%">
+                            </div>
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
@@ -496,12 +514,12 @@
                                     </a>
                                 </div>
                                 <div class="f-grow-15" style="flex-grow: 15;">
-                                    <form action="" method="post">
-                                        <div class="form-group">
-                                            <input type="text" name="" id="" placeholder="Viết bình luận..."
-                                                class="form-control">
-                                        </div>
-                                    </form>
+
+                                    <div class="form-group">
+                                        <input type="text" name="" id="" placeholder="Viết bình luận..."
+                                            class="form-control">
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="other-comment">
@@ -568,12 +586,12 @@
                                     </a>
                                 </div>
                                 <div class="f-grow-15" style="flex-grow: 15;">
-                                    <form action="" method="post">
-                                        <div class="form-group">
-                                            <input type="text" name="" id="" placeholder="Viết bình luận..."
-                                                class="form-control">
-                                        </div>
-                                    </form>
+
+                                    <div class="form-group">
+                                        <input type="text" name="" id="" placeholder="Viết bình luận..."
+                                            class="form-control">
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="other-comment">

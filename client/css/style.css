@@ -66,12 +66,18 @@ body {
 }
 
 .my-box .f-right .mr-l-30 {
+    position: relative;
     margin-left: 30px;
     text-decoration: none;
 }
 
 .my-box .f-right i {
     color: black;
+}
+
+.f-right .mr-l-30 span {
+    position: absolute;
+    top: -7px;
 }
 
 .header-box {
@@ -107,7 +113,8 @@ body {
     border-radius: 5px;
 }
 
-.challenge-box, .list-friend-box {
+.challenge-box,
+.list-friend-box {
     padding: 10px 10px 0px 10px;
 }
 
@@ -117,7 +124,7 @@ body {
     width: 285px;
 }
 
-.col-center{
+.col-center {
     position: relative;
     left: 292px;
 }
@@ -142,19 +149,40 @@ body {
     margin-top: 15px;
 }
 
-.add-post {
-    text-align: center;
+.add-post-box {
+    height: auto;
+    border-radius: 5px;
+    padding-bottom: 10px;
 }
 
-.add-post button {
-    width: 100%;
+.add-post-box div.title-box {
+    background-color: #f5f6f7;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #dddfe2;
+    padding: 5px 5px 5px 10px;
+    font-size: 16px;
 }
 
-.upload-image > input {
+.add-post-box .mr-t-20 {
+    margin-top: 20px;
+}
+
+.add-post-box textarea.post-caption {
+    resize: none;
+}
+
+.upload-image label {
+    background-color: #f5f6f7;
+    margin: 15px 15px 10px 15px;
+    padding: 8px 10px;
+    border-radius: 18px;
+}
+
+.upload-image>input {
     display: none;
 }
 
-.upload-image i {
+.upload-image i, label {
     cursor: pointer;
 }
 
@@ -163,6 +191,7 @@ body {
     width: 100px;
     height: 100px;
     overflow: hidden;
+    margin: 0px 0px 0px 15px;
 }
 
 .region-img-preview #img-preview {
@@ -256,6 +285,7 @@ body {
 }
 
 .comment-box .other-comment {
+    position: relative;
     background-color: #E9EBEE;
     border-radius: 30px;
     padding: 5px 5px 10px 5px;
@@ -281,6 +311,12 @@ body {
 .comment-box .other-comment .comment-content {
     margin: 12px 0px 12px 10px;
     word-wrap: break-word;
+}
+
+.other-comment .comment-option {
+    position: absolute;
+    right: -10px;
+    top: 20px;
 }
 
 .hint-friend-box .table a {
@@ -344,9 +380,19 @@ body {
 
 @media only screen and (max-width: 600px) {
 
-    .col-right, .col-left {
+    .logo-box {
         display: none;
     }
+
+    .search-box {
+        margin-right: 150px;
+    }
+
+    .col-right,
+    .col-left {
+        display: none;
+    }
+
     .col-center {
         left: 0;
     }
@@ -372,18 +418,26 @@ body {
     border-radius: 50%;
 }
 
-.avt-box .center img{
+.avt-box .center img {
     width: 190px;
     height: 190px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.avt-box .fa-camera {
+.avt-box i {
     position: absolute;
     right: 25%;
     bottom: 10%;
     color: black;
+}
+
+.upload-avatar>input {
+    display: none;
+}
+
+.upload-image i {
+    cursor: pointer;
 }
 
 .detail-info .user-info {

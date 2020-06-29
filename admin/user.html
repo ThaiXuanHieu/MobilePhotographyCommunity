@@ -18,8 +18,8 @@
     <header id="header" class="bg-white">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4">
-                    <div class="logo jumbToHome" style="padding-top: 3px;">
+                <div class="col-xs-4 logo-box">
+                    <div class="logo jumpToHome" style="padding-top: 3px;">
                         <a href="index.html">
                             <img src="./img/page/logo.png" alt="">
                         </a>
@@ -36,7 +36,7 @@
                         </div>
                     </form>
                 </div>
-                <!-- <div class="col-sm-4 jumbToLogin">
+                <!-- <div class="col-sm-4 jumpToLogin">
                     <a href="login.html" class="btn btn-primary" style="float: right;">Đăng nhập</a>
                 </div> -->
 
@@ -44,12 +44,13 @@
                     <div class="f-right">
                         <a class="mr-l-30" href="profile.html"><img class="user-avt" src="./img/user/hieuxt.png"
                                 style="width: 40px; height: 40px;" alt=""></a>
-                        <a class="mr-l-30" href=""><i class="fal fa-user-friends fa-lg"></i><sup
-                                style="color: red;">2</sup></a>
+                        <a class="mr-l-30" href=""><i class="fal fa-user-friends fa-lg"></i><span
+                                style="color: red;">2</span></a>
 
                         <div class="notification">
                             <a class="mr-l-30" href="#" id="notification-dropdown" data-toggle="dropdown"><i
-                                    class="fal fa-bell fa-lg"></i><sup style="color: red;">3</sup></a>
+                                    class="fal fa-bell fa-lg"></i><span style="color: red;">3</span></a>
+
 
                             <!-- Open Notification -->
                             <ul class="notification-box dropdown-menu dropdown-menu-right"
@@ -160,9 +161,11 @@
                                     <li><a href="challenge-detail.html">Tham gia thử thách</a></li>
                                 </ul>
                             </div>
-                            <a href="setting.html"><i class="fal fa-chart-line" style="width: 20px; margin-right: 15px"></i>
+                            <a href="setting.html"><i class="fal fa-chart-line"
+                                    style="width: 20px; margin-right: 15px"></i>
                                 Thống kê</a>
-                            <a href="setting.html"><i class="fal fa-comment-alt-edit" style="width: 20px; margin-right: 15px"></i>
+                            <a href="setting.html"><i class="fal fa-comment-alt-edit"
+                                    style="width: 20px; margin-right: 15px"></i>
                                 Phản hồi</a>
                             <a href="setting.html"><i class="fal fa-cog" style="width: 20px; margin-right: 15px"></i>
                                 Cài đặt</a>
@@ -176,10 +179,10 @@
                         <h1 class="title-content">Người dùng</h1>
 
                         <div class="row feature">
-                            <div class="col-xs-4">  
+                            <div class="col-xs-2" style="padding: 0px;">
                                 <div class="filter">
-                                    <a href="#" id="filter-dropdown" class="btn btn-primary" data-toggle="dropdown" style="float: left;"><i
-                                            class="fal fa-filter"></i> Lọc</a>
+                                    <a href="#" id="filter-dropdown" class="btn btn-primary" data-toggle="dropdown"
+                                        style="float: left;"><i class="fal fa-filter"></i> Lọc</a>
                                     <!-- Open Option -->
                                     <ul class="setting-box dropdown-menu dropdown-menu-left"
                                         aria-labelledby="filter-dropdown">
@@ -187,12 +190,10 @@
                                     </ul>
                                     <!-- End Option -->
                                 </div>
-
-                                <a href="" class="btn btn-primary" style="float: right; display: none;"><i class="fal fa-user-shield"></i> Cấp quyền Quản trị viên</a>
                             </div>
-                            <div class="col-xs-4">
-                                <a href="" id="btnDeleteMulti" class="btn btn-danger" title="Xóa"
-                                    style="float: right; margin-right: 10px; display: none;"><i class="fal fa-trash-alt"></i> Xóa</a>
+                            <div class="col-xs-6">
+                                <a href="" class="btn btn-primary" style="float: right;"><i
+                                    class="fal fa-user-shield"></i> Cấp quyền Quản trị viên</a>
                             </div>
                             <div class="col-xs-4">
                                 <div class="search-box">
@@ -217,7 +218,6 @@
                                         <th>STT</th>
                                         <th>Tài khoản</th>
                                         <th>Số điện thoại</th>
-                                        <th>Email</th>
                                         <th>Trạng thái</th>
                                         <th><input type="checkbox" name="" id=""> Chọn</th>
                                         <th>Chức năng</th>
@@ -232,8 +232,8 @@
                                             <span>An Pon</span>
                                         </td>
                                         <td>0147852369</td>
-                                        <td>anpon@gmail.com</td>
-                                        <td><span class="label label-danger">Thoát</span><br>lúc 02:36:12 18/04/2020</td>
+                                        <td><span class="label label-danger">Thoát</span><br>lúc 02:36:12 18/04/2020
+                                        </td>
                                         <td><input type="checkbox" name="" id=""></td>
                                         <td>
                                             <a href="" class="btn btn-warning" title="Sửa"><i
@@ -250,7 +250,6 @@
                                             <span>Hiếu XT</span>
                                         </td>
                                         <td>0147852369</td>
-                                        <td>hieuxt@gmail.com</td>
                                         <td><span class="label label-success">Đang hoạt động</span></td>
                                         <td><input type="checkbox" name="" id=""></td>
                                         <td>
@@ -268,7 +267,6 @@
                                             <span>Tôn Ngộ Không</span>
                                         </td>
                                         <td>0147852369</td>
-                                        <td>tonngokhong@gmail.com</td>
                                         <td><span class="label label-success">Đang hoạt động</span></td>
                                         <td><input type="checkbox" name="" id=""></td>
                                         <td>
@@ -286,8 +284,8 @@
                                             <span>Trư Bát Giới</span>
                                         </td>
                                         <td>0147852369</td>
-                                        <td>trubatgioi@gmail.com</td>
-                                        <td><span class="label label-danger">Thoát</span><br>lúc 02:36:12 18/04/2020</td>
+                                        <td><span class="label label-danger">Thoát</span><br>lúc 02:36:12 18/04/2020
+                                        </td>
                                         <td><input type="checkbox" name="" id=""></td>
                                         <td>
                                             <a href="" class="btn btn-warning" title="Sửa"><i
@@ -304,8 +302,8 @@
                                             <span>Sa Tăng</span>
                                         </td>
                                         <td>0147852369</td>
-                                        <td>satang@gmail.com</td>
-                                        <td><span class="label label-danger">Thoát</span><br>lúc 02:36:12 18/04/2020</td>
+                                        <td><span class="label label-danger">Thoát</span><br>lúc 02:36:12 18/04/2020
+                                        </td>
                                         <td><input type="checkbox" name="" id=""></td>
                                         <td>
                                             <a href="" class="btn btn-warning" title="Sửa"><i

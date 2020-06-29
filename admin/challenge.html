@@ -18,8 +18,8 @@
     <header id="header" class="bg-white">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4">
-                    <div class="logo jumbToHome" style="padding-top: 3px;">
+                <div class="col-xs-4 logo-box">
+                    <div class="logo jumpToHome" style="padding-top: 3px;">
                         <a href="index.html">
                             <img src="./img/page/logo.png" alt="">
                         </a>
@@ -36,7 +36,7 @@
                         </div>
                     </form>
                 </div>
-                <!-- <div class="col-sm-4 jumbToLogin">
+                <!-- <div class="col-sm-4 jumpToLogin">
                     <a href="login.html" class="btn btn-primary" style="float: right;">Đăng nhập</a>
                 </div> -->
 
@@ -44,12 +44,13 @@
                     <div class="f-right">
                         <a class="mr-l-30" href="profile.html"><img class="user-avt" src="./img/user/hieuxt.png"
                                 style="width: 40px; height: 40px;" alt=""></a>
-                        <a class="mr-l-30" href=""><i class="fal fa-user-friends fa-lg"></i><sup
-                                style="color: red;">2</sup></a>
+                        <a class="mr-l-30" href=""><i class="fal fa-user-friends fa-lg"></i><span
+                                style="color: red;">2</span></a>
 
                         <div class="notification">
                             <a class="mr-l-30" href="#" id="notification-dropdown" data-toggle="dropdown"><i
-                                    class="fal fa-bell fa-lg"></i><sup style="color: red;">3</sup></a>
+                                    class="fal fa-bell fa-lg"></i><span style="color: red;">3</span></a>
+
 
                             <!-- Open Notification -->
                             <ul class="notification-box dropdown-menu dropdown-menu-right"
@@ -145,9 +146,12 @@
                     <div class="pd-15px">
                         <div class="vertical-menu ">
                             <button class="btn"><i class="fal fa-bars fa-lg"></i></button>
-                            <a href="index.html"><i class="fal fa-home" style="width: 20px; margin-right: 15px"></i> Trang chủ</a>
-                            <a href="user.html"><i class="fal fa-users" style="width: 20px; margin-right: 15px"></i> Quản lý người dùng</a>
-                            <a href="category.html"><i class="fal fa-table" style="width: 20px; margin-right: 15px"></i> Quản lý chủ
+                            <a href="index.html"><i class="fal fa-home" style="width: 20px; margin-right: 15px"></i>
+                                Trang chủ</a>
+                            <a href="user.html"><i class="fal fa-users" style="width: 20px; margin-right: 15px"></i>
+                                Quản lý người dùng</a>
+                            <a href="category.html"><i class="fal fa-table" style="width: 20px; margin-right: 15px"></i>
+                                Quản lý chủ
                                 đề</a>
                             <a data-toggle="collapse" href="#challenge-menu"><i class="fal fa-running"
                                     style="width: 20px; margin-right: 15px"></i> Quản lý thử thách <i
@@ -158,11 +162,14 @@
                                     <li><a href="challenge-detail.html">Tham gia thử thách</a></li>
                                 </ul>
                             </div>
-                            <a href="setting.html"><i class="fal fa-chart-line" style="width: 20px; margin-right: 15px"></i>
+                            <a href="setting.html"><i class="fal fa-chart-line"
+                                    style="width: 20px; margin-right: 15px"></i>
                                 Thống kê</a>
-                            <a href="setting.html"><i class="fal fa-comment-alt-edit" style="width: 20px; margin-right: 15px"></i>
+                            <a href="setting.html"><i class="fal fa-comment-alt-edit"
+                                    style="width: 20px; margin-right: 15px"></i>
                                 Phản hồi</a>
-                            <a href="setting.html"><i class="fal fa-cog" style="width: 20px; margin-right: 15px"></i> Cài đặt</a>
+                            <a href="setting.html"><i class="fal fa-cog" style="width: 20px; margin-right: 15px"></i>
+                                Cài đặt</a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +207,7 @@
                                                     <label for="">Ngày kết thúc:</label>
                                                     <input type="date" value="" class="form-control">
                                                 </div>
-                
+
                                                 <div class="form-group">
                                                     <label for="">Mô tả:</label>
                                                     <input type="text" name="" id="" class="form-control">
@@ -215,20 +222,22 @@
                                     </div>
 
                                 </div>
-                            </div>  
+                            </div>
                         </div>
                         <div class="row feature">
                             <div class="col-xs-4">
-                                
+
                             </div>
                             <div class="col-xs-4">
-                                <a href="" id="btnDeleteMulti" class="btn btn-danger" title="Xóa" style="float: right; display: none;"><i class="fal fa-trash-alt"></i> Xóa</a>
+                                <a href="" id="btnDeleteMulti" class="btn btn-danger" title="Xóa"
+                                    style="float: right; display: none;"><i class="fal fa-trash-alt"></i> Xóa</a>
                             </div>
                             <div class="col-xs-4">
                                 <div class="search-box">
                                     <form action="" method="post">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Tìm kiếm" id="txtSearch" name="CategoryName">
+                                            <input type="text" class="form-control" placeholder="Tìm kiếm"
+                                                id="txtSearch" name="CategoryName">
                                             <div class="input-group-btn">
                                                 <button class="btn btn-default" type="submit"><i
                                                         class="fal fa-search"></i></button>
@@ -261,15 +270,19 @@
                                         <td>12/04/2020</td>
                                         <td></td>
                                         <td>
-                                            <img src="./img/user/dungle.jpg" alt="" style="width: 40px; height: 40px; border-radius: 50%;">
+                                            <img src="./img/user/dungle.jpg" alt=""
+                                                style="width: 40px; height: 40px; border-radius: 50%;">
                                             <span>Dũng Lê</span>
                                         </td>
                                         <td>14/4/2020</td>
                                         <td><input type="checkbox" name="" id=""></td>
                                         <td>
-                                            <a href="" class="btn btn-warning" title="Sửa"><i class="fal fa-edit"></i></a>
-                                            <a href="" class="btn btn-danger" title="Xóa"><i class="fal fa-trash-alt"></i></a>
-                                            <a href="challenge-detail.html" class="btn btn-info" title="Chi tiết"><i class="fal fa-info-circle"></i></a>
+                                            <a href="" class="btn btn-warning" title="Sửa"><i
+                                                    class="fal fa-edit"></i></a>
+                                            <a href="" class="btn btn-danger" title="Xóa"><i
+                                                    class="fal fa-trash-alt"></i></a>
+                                            <a href="challenge-detail.html" class="btn btn-info" title="Chi tiết"><i
+                                                    class="fal fa-info-circle"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -279,15 +292,19 @@
                                         <td>12/04/2020</td>
                                         <td></td>
                                         <td>
-                                            <img src="./img/user/dungle.jpg" alt="" style="width: 40px; height: 40px; border-radius: 50%;">
+                                            <img src="./img/user/dungle.jpg" alt=""
+                                                style="width: 40px; height: 40px; border-radius: 50%;">
                                             <span>Dũng Lê</span>
                                         </td>
                                         <td>14/4/2020</td>
                                         <td><input type="checkbox" name="" id=""></td>
                                         <td>
-                                            <a href="" class="btn btn-warning" title="Sửa"><i class="fal fa-edit"></i></a>
-                                            <a href="" class="btn btn-danger" title="Xóa"><i class="fal fa-trash-alt"></i></a>
-                                            <a href="challenge-detail.html" class="btn btn-info" title="Chi tiết"><i class="fal fa-info-circle"></i></a>
+                                            <a href="" class="btn btn-warning" title="Sửa"><i
+                                                    class="fal fa-edit"></i></a>
+                                            <a href="" class="btn btn-danger" title="Xóa"><i
+                                                    class="fal fa-trash-alt"></i></a>
+                                            <a href="challenge-detail.html" class="btn btn-info" title="Chi tiết"><i
+                                                    class="fal fa-info-circle"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -297,15 +314,19 @@
                                         <td>12/04/2020</td>
                                         <td></td>
                                         <td>
-                                            <img src="./img/user/thiennhien.jpg" alt="" style="width: 40px; height: 40px; border-radius: 50%;">
+                                            <img src="./img/user/thiennhien.jpg" alt=""
+                                                style="width: 40px; height: 40px; border-radius: 50%;">
                                             <span>Thiên Nhiên</span>
                                         </td>
                                         <td>14/4/2020</td>
                                         <td><input type="checkbox" name="" id=""></td>
                                         <td>
-                                            <a href="" class="btn btn-warning" title="Sửa"><i class="fal fa-edit"></i></a>
-                                            <a href="" class="btn btn-danger" title="Xóa"><i class="fal fa-trash-alt"></i></a>
-                                            <a href="challenge-detail.html" class="btn btn-info" title="Chi tiết"><i class="fal fa-info-circle"></i></a>
+                                            <a href="" class="btn btn-warning" title="Sửa"><i
+                                                    class="fal fa-edit"></i></a>
+                                            <a href="" class="btn btn-danger" title="Xóa"><i
+                                                    class="fal fa-trash-alt"></i></a>
+                                            <a href="challenge-detail.html" class="btn btn-info" title="Chi tiết"><i
+                                                    class="fal fa-info-circle"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -315,15 +336,19 @@
                                         <td>12/04/2020</td>
                                         <td></td>
                                         <td>
-                                            <img src="./img/user/dungle.jpg" alt="" style="width: 40px; height: 40px; border-radius: 50%;">
+                                            <img src="./img/user/dungle.jpg" alt=""
+                                                style="width: 40px; height: 40px; border-radius: 50%;">
                                             <span>Dũng Lê</span>
                                         </td>
                                         <td>14/4/2020</td>
                                         <td><input type="checkbox" name="" id=""></td>
                                         <td>
-                                            <a href="" class="btn btn-warning" title="Sửa"><i class="fal fa-edit"></i></a>
-                                            <a href="" class="btn btn-danger" title="Xóa"><i class="fal fa-trash-alt"></i></a>
-                                            <a href="challenge-detail.html" class="btn btn-info" title="Chi tiết"><i class="fal fa-info-circle"></i></a>
+                                            <a href="" class="btn btn-warning" title="Sửa"><i
+                                                    class="fal fa-edit"></i></a>
+                                            <a href="" class="btn btn-danger" title="Xóa"><i
+                                                    class="fal fa-trash-alt"></i></a>
+                                            <a href="challenge-detail.html" class="btn btn-info" title="Chi tiết"><i
+                                                    class="fal fa-info-circle"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -333,15 +358,19 @@
                                         <td>12/04/2020</td>
                                         <td></td>
                                         <td>
-                                            <img src="./img/user/nguyentrongtoan.jpg" alt="" style="width: 40px; height: 40px; border-radius: 50%;">
+                                            <img src="./img/user/nguyentrongtoan.jpg" alt=""
+                                                style="width: 40px; height: 40px; border-radius: 50%;">
                                             <span>Nguyễn Trọng Toàn</span>
                                         </td>
                                         <td>14/4/2020</td>
                                         <td><input type="checkbox" name="" id=""></td>
                                         <td>
-                                            <a href="" class="btn btn-warning" title="Sửa"><i class="fal fa-edit"></i></a>
-                                            <a href="" class="btn btn-danger" title="Xóa"><i class="fal fa-trash-alt"></i></a>
-                                            <a href="challenge-detail.html" class="btn btn-info" title="Chi tiết"><i class="fal fa-info-circle"></i></a>
+                                            <a href="" class="btn btn-warning" title="Sửa"><i
+                                                    class="fal fa-edit"></i></a>
+                                            <a href="" class="btn btn-danger" title="Xóa"><i
+                                                    class="fal fa-trash-alt"></i></a>
+                                            <a href="challenge-detail.html" class="btn btn-info" title="Chi tiết"><i
+                                                    class="fal fa-info-circle"></i></a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -359,7 +388,7 @@
             </div>
         </div>
     </div>
-    
+
     <footer class="bg-white">
         <div class="copyright">Cộng đồng nhiếp ảnh di động - Copyright © Thái Xuân Hiếu 2020 </div>
     </footer>

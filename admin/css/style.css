@@ -35,12 +35,18 @@ table thead {
 }
 
 .my-box .f-right .mr-l-30 {
+    position: relative;
     margin-left: 30px;
     text-decoration: none;
 }
 
 .my-box .f-right i {
     color: black;
+}
+
+.f-right .mr-l-30 span {
+    position: absolute;
+    top: -7px;
 }
 
 .header-box {
@@ -156,4 +162,15 @@ footer {
 footer .copyright {
     text-align: center;
     font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .logo-box {
+        display: none;
+    }
+
+    .search-box {
+        margin-right: 150px;
+    }
 }

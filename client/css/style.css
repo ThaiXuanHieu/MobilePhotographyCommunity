@@ -400,7 +400,7 @@ body {
 
 /* profile */
 
-#profile .row {
+#profile .user {
     height: 210px;
     margin-top: 70px;
 }
@@ -440,22 +440,23 @@ body {
     cursor: pointer;
 }
 
-.detail-info .user-info {
-    display: flex;
+.detail-info {
+    position: relative;
 }
 
-.user-info .user-name,
-.is-admin,
-.status-friend {
-    margin-right: 20px;
+.user-info .user-name {
+    position: relative;
 }
 
 .user-info .is-admin {
-    padding-top: 25px;
+    position: absolute;
+    top: 5px;
+    left: 90px;
 }
 
 .user-info .status-friend {
     padding-top: 15px;
+    margin-bottom: 20px;
 }
 
 .detail-info .other-info {
@@ -469,13 +470,20 @@ body {
 
 .detail-info .other-info ul li {
     display: inline;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .detail-info .other-info ul a {
     font-size: 20px;
     text-decoration: none;
     color: #262626;
+}
+
+.update-profile {
+    position: absolute;
+    right: 110px;
+    top: 20px;
+    cursor: pointer;
 }
 
 .photo-gallery {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./fonts/fontawesome-pro-5.11.2-web/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/challenge.css">
     <title>Thử thách: 14 ngày cùng Hiếu XT</title>
     <link rel="icon" href="./img/page/icon.png" type="image/gif">
 </head>
+
 <body>
     <header id="header" class="bg-white">
         <div class="container">
@@ -132,6 +135,28 @@
             </div>
         </div>
     </header>
+    <section class="description-challenge container">
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="frame-created-by bg-white">
+                    <img class="created-by-challenge" src="./img/user/hieuxt.png" alt="">
+                </div>
+            </div>
+            <div class="col-xs-8">
+                <div class="date">
+                    <i class="fal fa-calendar-alt"></i><span style="margin-right:30px;"> 20/07/2020 - 02/08/2020</span>
+                    <i class="fal fa-users"></i><span style="margin-right:30px;"> 125 thành viên</span>
+                    <button class="btn btn-join-now">Tham gia ngay</button>
+                </div>
+                <div class="challenge-name">
+                    <h1>THỬ THÁCH #10: 14 ngày cùng Hiếu XT</h1>
+                </div>
+                <div class="description">
+                    <span>Mô tả: </span><span>Mỗi ngày, tất cả thành viên tham gia thử thách sẽ đăng một hình ảnh về chủ đề con người Việt Nam tại trang này.</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <section>
         <div class="container">
             <div class="col-sm-3 col-left">
@@ -143,25 +168,29 @@
                                 <td>
                                     <a href="challenge.html">14 ngày cùng Hiếu XT</a>
                                 </td>
-                                <td><a href="challenge.html"><span class="label label-primary">Tham gia ngay</span></a></td>
+                                <td><a href="challenge.html"><span class="label label-primary">Tham gia ngay</span></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
                                     <a href="challenge.html">30 ngày cùng Dũng Lê Lần 2</a>
                                 </td>
-                                <td><a href="challenge.html"><span class="label label-success">Đang diễn ra</span></a></td>
+                                <td><a href="challenge.html"><span class="label label-success">Đang diễn ra</span></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
                                     <a href="challenge.html">14 ngày cùng Thiên nhiên</a>
                                 </td>
-                                <td><a href="challenge.html"><span class="label label-warning">Sắp kết thúc</span></a></td>
+                                <td><a href="challenge.html"><span class="label label-warning">Sắp kết thúc</span></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
                                     <a href="challenge.html">30 ngày cùng Dũng Lê</a>
                                 </td>
-                                <td><a href="challenge.html"><span class="label label-danger">Đã kết thúc</span></a></td>
+                                <td><a href="challenge.html"><span class="label label-danger">Đã kết thúc</span></a>
+                                </td>
                             </tr>
                             <tr style="text-align: center;">
                                 <td colspan="2"><a class="view-more" href="">Xem thêm</a></td>
@@ -196,25 +225,26 @@
             </div>
             <div class="col-sm-6 col-center">
                 <div class="add-post-box bg-white">
-                    
+
                     <div class="title-box">Tạo bài viết</div>
                     <div class="mr-t-20">
-                        <a class="col-xs-2 mr-l-30" href="profile.html"><img class="user-avt" src="./img/user/hieuxt.png" alt=""></a>
-                            <div class="col-xs-10"><textarea class="post-caption-input form-control" name="" id="" placeholder="Bạn đang nghĩ gì?"></textarea></div>
+                        <a class="col-xs-2 mr-l-30" href="profile.html"><img class="user-avt"
+                                src="./img/user/hieuxt.png" alt=""></a>
+                        <div class="col-xs-10"><textarea class="post-caption-input form-control" name="" id=""
+                                placeholder="Bạn đang nghĩ gì?"></textarea></div>
                     </div>
                     <div class="upload-image" title="Thêm ảnh">
                         <label for="icon-input">
                             <i class="fas fa-image fa-lg"></i>
                             Ảnh/Video
                         </label>
-                        <input id="icon-input" type="file" name="file"
-                            accept=".jpg, .png, *.jpeg" onchange="addImage(this)" />
+                        <input id="icon-input" type="file" name="file" accept=".jpg, .png, *.jpeg"
+                            onchange="addImage(this)" />
                     </div>
                     <div class="region-img-preview" style="display: none;">
                         <img id="img-preview" src="" alt="" width="100%">
                         <div class="middle">
-                            <a href="#" style="color: black;"><i
-                                    class="fal fa-trash-alt fa-lg"></i></a>
+                            <a href="#" style="color: black;"><i class="fal fa-trash-alt fa-lg"></i></a>
                         </div>
                     </div>
                     <button class="btn btn-primary btn-up"><i class="fal fa-check"></i> Đăng</button>
@@ -242,8 +272,9 @@
                             </div>
                         </div>
                         <div class="content">
-                            <div class="post-caption">Khoảnh khắc mắt thường không thể nhìn thấy</div>
-                            <div class="post-img"><img class="photo" src="./img/post-img/tambiakinh.jpg" alt="" width="100%"></div>
+                            <div class="post-caption">Tôi yêu Việt Nam</div>
+                            <div class="post-img"><img class="photo" src="./img/post-img/giotnuoc-vietnam.jpg" alt=""
+                                    width="100%"></div>
                         </div>
                         <div class="count-liked-commented">
 
@@ -347,7 +378,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">Ai bảo chăn trâu là khổ chăn trâu sướng lắm chứ</div>
-                            <div class="post-img"><img class="photo" src="./img/post-img/contrau.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img class="photo" src="./img/post-img/contrau.jpg" alt=""
+                                    width="100%"></div>
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
@@ -444,7 +476,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">Hoa cúc</div>
-                            <div class="post-img"><img class="photo" src="./img/post-img/hoacuc.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img class="photo" src="./img/post-img/hoacuc.jpg" alt=""
+                                    width="100%"></div>
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
@@ -541,7 +574,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">Cafe</div>
-                            <div class="post-img"><img class="photo" src="./img/post-img/lycafe.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img class="photo" src="./img/post-img/lycafe.jpg" alt=""
+                                    width="100%"></div>
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
@@ -638,7 +672,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">Back & White</div>
-                            <div class="post-img"><img class="photo" src="./img/post-img/black&white.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img class="photo" src="./img/post-img/black&white.jpg" alt=""
+                                    width="100%"></div>
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
@@ -716,99 +751,70 @@
                 </div>
             </div>
             <div class="col-sm-3 col-right">
-                <div class="hint-friend-box bg-white">
-                    <h4 class="title-box">Gợi ý kết bạn</h4>
-                    <table class="table">
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <a href="">
-                                        <img class="user-avt" src="./img/user/tonngokhong.jpg" alt=""
-                                            style=" width:40px; height:40px">
-                                        <span class="fullname" style="display: inline;">Tôn Ngộ Không</span>
-                                    </a>
-                                </td>
-                                <td class="btn-add-friend">
-                                    <a href=""><i class="fal fa-user-plus fa-lg"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="">
-                                        <img class="user-avt" src="./img/user/trubatgioi.jpg" alt=""
-                                            style=" width:40px; height:40px">
-                                        <span class="fullname" style="display: inline;">Trư Bát Giới</span>
-                                    </a>
-                                </td>
-                                <td class="btn-add-friend">
-                                    <a href=""><i class="fal fa-user-plus fa-lg"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="">
-                                        <img class="user-avt" src="./img/user/satang.jpg" alt=""
-                                            style=" width:40px; height:40px">
-                                        <span class="fullname" style="display: inline;">Să Tăng</span>
-                                    </a>
-                                </td>
-                                <td class="btn-add-friend">
-                                    <a href=""><i class="fal fa-user-plus fa-lg"></i></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="list-friend-box bg-white">
-                    <h4 class="title-box">Danh sách bạn bè</h4>
+
+                <div class="rankings-box bg-white">
+                    <h4 class="title-box">Xếp hạng</h4>
                     <div class="overflow-auto">
                         <ul>
                             <li>
                                 <a href=""><img class="user-avt" src="./img/user/anpon.jpg" alt=""
-                                        style=" width:40px; height:40px"><span class="friend">An pon</span><span
-                                        class="label label-default">15
-                                        phút</span></a>
+                                        style=" width:40px; height:40px"><span class="member">An pon</span><span
+                                        class="label label-success">150 Thích</span></a>
                             </li>
                             <li>
                                 <a href=""><img class="user-avt" src="./img/user/tonngokhong.jpg" alt=""
-                                        style=" width:40px; height:40px"><span class="friend">Tôn Ngộ Không</span><span
-                                        class="label label-success">Hoạt động</span></a>
+                                        style=" width:40px; height:40px"><span class="member">Tôn Ngộ Không</span><span
+                                        class="label label-success">149 Thích</span></a>
                             </li>
                             <li>
                                 <a href=""><img class="user-avt" src="./img/user/trubatgioi.jpg" alt=""
-                                        style=" width:40px; height:40px"><span class="friend">Trư Bát Giới</span><span
-                                        class="label label-default">2
-                                        giờ</span></a>
+                                        style=" width:40px; height:40px"><span class="member">Trư Bát Giới</span><span
+                                        class="label label-success">148 Thích</span></a>
                             </li>
                             <li>
                                 <a href=""><img class="user-avt" src="./img/user/satang.jpg" alt=""
-                                        style=" width:40px; height:40px"><span class="friend">Sa tăng</span><span
-                                        class="label label-success">Hoạt
-                                        động</span></a>
+                                        style=" width:40px; height:40px"><span class="member">Sa tăng</span><span
+                                        class="label label-success">147 Thích</span></a>
                             </li>
                             <li>
                                 <a href=""><img class="user-avt" src="./img/user/anpon.jpg" alt=""
-                                        style=" width:40px; height:40px"><span class="friend">An pon</span><span
-                                        class="label label-default">15
-                                        phút</span></a>
+                                        style=" width:40px; height:40px"><span class="member">An pon</span><span
+                                        class="label label-success">146 Thích</span></a>
                             </li>
                             <li>
                                 <a href=""><img class="user-avt" src="./img/user/tonngokhong.jpg" alt=""
-                                        style=" width:40px; height:40px"><span class="friend">Tôn Ngộ Không</span><span
-                                        class="label label-success">Hoạt động</span></a>
+                                        style=" width:40px; height:40px"><span class="member">Tôn Ngộ Không</span><span
+                                        class="label label-success">145 Thích</span></a>
                             </li>
                             <li>
                                 <a href=""><img class="user-avt" src="./img/user/trubatgioi.jpg" alt=""
-                                        style=" width:40px; height:40px"><span class="friend">Trư Bát Giới</span><span
-                                        class="label label-default">2
-                                        giờ</span></a>
+                                        style=" width:40px; height:40px"><span class="member">Trư Bát Giới</span><span
+                                        class="label label-success">144 Thích</span></a>
                             </li>
                             <li>
                                 <a href=""><img class="user-avt" src="./img/user/satang.jpg" alt=""
-                                        style=" width:40px; height:40px"><span class="friend">Sa Tăng</span><span
-                                        class="label label-success">Hoạt
-                                        động</span></a>
+                                        style=" width:40px; height:40px"><span class="member">Sa Tăng</span><span
+                                        class="label label-success">143 Thích</span></a>
+                            </li>
+                            <li>
+                                <a href=""><img class="user-avt" src="./img/user/satang.jpg" alt=""
+                                        style=" width:40px; height:40px"><span class="member">Sa Tăng</span><span
+                                        class="label label-success">142 Thích</span></a>
+                            </li>
+                            <li>
+                                <a href=""><img class="user-avt" src="./img/user/satang.jpg" alt=""
+                                        style=" width:40px; height:40px"><span class="member">Sa Tăng</span><span
+                                        class="label label-success">141 Thích</span></a>
+                            </li>
+                            <li>
+                                <a href=""><img class="user-avt" src="./img/user/satang.jpg" alt=""
+                                        style=" width:40px; height:40px"><span class="member">Sa Tăng</span><span
+                                        class="label label-success">140 Thích</span></a>
+                            </li>
+                            <li>
+                                <a href=""><img class="user-avt" src="./img/user/satang.jpg" alt=""
+                                        style=" width:40px; height:40px"><span class="member">Sa Tăng</span><span
+                                        class="label label-success">139 Thích</span></a>
                             </li>
                         </ul>
                     </div>
@@ -823,4 +829,5 @@
     </div>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

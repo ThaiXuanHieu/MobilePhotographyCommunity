@@ -103,19 +103,21 @@ body {
 .col-left,
 .col-center,
 .col-right {
-    margin-top: 70px;
+    margin-top: 220px;
 }
 
 .challenge-box,
 .category-box,
 .post,
 .hint-friend-box,
-.list-friend-box {
+.list-friend-box,
+.rankings-box {
     border-radius: 5px;
 }
 
 .challenge-box,
-.list-friend-box {
+.list-friend-box,
+.rankings-box {
     padding: 10px 10px 0px 10px;
 }
 
@@ -356,7 +358,6 @@ label {
 }
 
 .list-friend-box .overflow-auto {
-    height: 315px;
     overflow: auto;
 }
 
@@ -647,24 +648,6 @@ label {
     cursor: pointer;
 }
 
-.fixed-bar {
-    display: none;
-    position: fixed;
-    left: 1%;
-    bottom: 5%;
-}
-
-.fixed-bar a {
-    display: block;
-    text-align: center;
-    padding: 16px;
-    background-color: white;
-    font-size: 16px;
-    margin: 10px 0px;
-    border-radius: 50%;
-    box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,.15);
-}
-
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 600px) {
     .modal-content {
@@ -677,8 +660,83 @@ label {
         top: 140px;
         right: 15px;
     }
+}
 
-    .fixed-bar {
-        display: block;
-    }
+/* challenge */
+.description-challenge {
+    width: 100%;
+    position: fixed;
+    z-index: 1029;
+    top: 7%;
+    padding: 20px 0px 20px 20px;
+    background-image: radial-gradient(circle, #9716e1, #8608e8, #7100ef, #5300f7, #0b00ff);
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+}
+
+.frame-created-by {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    text-align: center;
+    padding: 5px;
+    float: right;
+    margin-right: 20px;
+}
+
+.description-challenge .created-by-challenge {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.rankings-box {
+    padding-bottom: 10px;
+    height: 500px;
+}
+
+.rankings-box .overflow-auto {
+    height: 430px;
+    overflow: auto;
+}
+
+.rankings-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.rankings-box ul li {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.rankings-box ul li a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.rankings-box ul li a img {
+    margin-right: 5px;
+}
+
+.rankings-box ul li a span.label {
+    float: right;
+    margin: 10px 0px;
+    width: 70px;
+}
+
+.date, .participants, .description {
+    color: white;
+}
+
+.challenge-name h1 {
+    color: #fff41b;
+    margin-top: 10px;
+}
+
+.btn-join-now {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+    background-color: #ffb700;
 }

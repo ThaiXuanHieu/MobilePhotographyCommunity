@@ -660,6 +660,17 @@ label {
         top: 140px;
         right: 15px;
     }
+
+    span.close-description {
+        position: absolute;
+        width: 24px;
+        left: 5px;
+    }
+
+    .frame-created-by.bg-white {
+        float: none;
+        margin-right: 0px;
+    }
 }
 
 /* challenge */
@@ -671,7 +682,7 @@ label {
     padding: 20px 0px 20px 20px;
     background-image: radial-gradient(circle, #9716e1, #8608e8, #7100ef, #5300f7, #0b00ff);
     border-radius: 0px 0px 15px 15px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
 }
 
 .frame-created-by {
@@ -727,7 +738,9 @@ label {
     width: 70px;
 }
 
-.date, .participants, .description {
+.date,
+.participants,
+.description {
     color: white;
 }
 
@@ -737,6 +750,23 @@ label {
 }
 
 .btn-join-now {
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
     background-color: #ffb700;
+}
+
+.close-description {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-description:hover,
+.close-description:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }

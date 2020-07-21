@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./fonts/fontawesome-pro-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/mikes-modal.css">
+    <script src="./js/mikes-modal.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Trang chủ</title>
     <link rel="icon" href="./img/page/icon.png" type="image/gif">
@@ -146,25 +148,28 @@
                                 <td>
                                     <a href="challenge.html">14 ngày cùng Hiếu XT</a>
                                 </td>
-                                <td><a href="challenge.html"><span class="label label-primary">Tham gia ngay</span></a></td>
+                                <td><a href="challenge.html"><span class="label label-primary">Tham gia ngay</span></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
                                     <a href="challenge.html">30 ngày cùng Dũng Lê Lần 2</a>
                                 </td>
-                                <td><a href="challenge.html"><span class="label label-success">Đang diễn ra</span></a></td>
+                                <td><a href="challenge.html"><span class="label label-success">Đang diễn ra</span></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
                                     <a href="challenge.html">14 ngày cùng Thiên nhiên</a>
                                 </td>
-                                <td><a href="challenge.html"><span class="label label-warning">Sắp kết thúc</span></a></td>
+                                <td><a href="challenge.html"><span class="label label-warning">Sắp kết thúc</span></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
                                     <a href="challenge.html">30 ngày cùng Dũng Lê</a>
                                 </td>
-                                <td><a href="challenge.html"><span class="label label-danger">Đã kết thúc</span></a></td>
+                                <td><a href=""><span class="label label-danger">Đã kết thúc</span></a></td>
                             </tr>
                             <tr style="text-align: center;">
                                 <td colspan="2"><a class="view-more" href="">Xem thêm</a></td>
@@ -199,25 +204,26 @@
             </div>
             <div class="col-sm-6 col-center">
                 <div class="add-post-box bg-white">
-                    
+
                     <div class="title-box">Tạo bài viết</div>
                     <div class="mr-t-20">
-                        <a class="col-xs-2 mr-l-30" href="profile.html"><img class="user-avt" src="./img/user/hieuxt.png" alt=""></a>
-                            <div class="col-xs-10"><textarea class="post-caption-input form-control" name="" id="" placeholder="Bạn đang nghĩ gì?"></textarea></div>
+                        <a class="col-xs-2 mr-l-30" href="profile.html"><img class="user-avt"
+                                src="./img/user/hieuxt.png" alt=""></a>
+                        <div class="col-xs-10"><textarea class="post-caption-input form-control" name="" id=""
+                                placeholder="Bạn đang nghĩ gì?"></textarea></div>
                     </div>
                     <div class="upload-image" title="Thêm ảnh">
                         <label for="icon-input">
                             <i class="fas fa-image fa-lg"></i>
                             Ảnh/Video
                         </label>
-                        <input id="icon-input" type="file" name="file"
-                            accept=".jpg, .png, *.jpeg" onchange="addImage(this)" />
+                        <input id="icon-input" type="file" name="file" accept=".jpg, .png, *.jpeg"
+                            onchange="addImage(this)" />
                     </div>
                     <div class="region-img-preview" style="display: none;">
                         <img id="img-preview" src="" alt="" width="100%">
                         <div class="middle">
-                            <a href="#" style="color: black;"><i
-                                    class="fal fa-trash-alt fa-lg"></i></a>
+                            <a href="#" style="color: black;"><i class="fal fa-trash-alt fa-lg"></i></a>
                         </div>
                     </div>
                     <button class="btn btn-primary btn-up"><i class="fal fa-check"></i> Đăng</button>
@@ -246,7 +252,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">Khoảnh khắc mắt thường không thể nhìn thấy</div>
-                            <div class="post-img"><img class="photo" src="./img/post-img/tambiakinh.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img class="photo" src="./img/post-img/tambiakinh.jpg" alt=""
+                                    width="100%"></div>
                         </div>
                         <div class="count-liked-commented">
 
@@ -350,7 +357,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">Ai bảo chăn trâu là khổ chăn trâu sướng lắm chứ</div>
-                            <div class="post-img"><img class="photo" src="./img/post-img/contrau.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img class="photo" src="./img/post-img/contrau.jpg" alt=""
+                                    width="100%"></div>
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
@@ -446,8 +454,10 @@
                             </div>
                         </div>
                         <div class="content">
-                            <div class="post-caption">Hoa cúc</div>
-                            <div class="post-img"><img class="photo" src="./img/post-img/hoacuc.jpg" alt="" width="100%"></div>
+                            <div class="post-caption">Vũ điệu bình minh</div>
+                            <div class="post-img"><img class="photo" src="./img/post-img/vudieubinhminh.jpg" alt=""
+                                    width="100%">
+                            </div>
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
@@ -544,7 +554,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">Cafe</div>
-                            <div class="post-img"><img class="photo" src="./img/post-img/lycafe.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img class="photo" src="./img/post-img/lycafe.jpg" alt=""
+                                    width="100%"></div>
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
@@ -641,7 +652,8 @@
                         </div>
                         <div class="content">
                             <div class="post-caption">Back & White</div>
-                            <div class="post-img"><img class="photo" src="./img/post-img/black&white.jpg" alt="" width="100%"></div>
+                            <div class="post-img"><img class="photo" src="./img/post-img/duatrau.jpg" alt=""
+                                    width="100%"></div>
                         </div>
                         <div class="post-action">
                             <div class="row" style="text-align: center;">
@@ -819,11 +831,24 @@
             </div>
         </div>
     </section>
+
     <!-- The Modal -->
-    <div id="modal-img" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img">
+    <div class="mikes-modal" id="myModal">
+        <img class="img-modal" src="./img/post-img/giotnuoc-bphone.jpg">
+        <div class="description">
+            <h1>Auth</h1>
+            <p>Content</p>
+        </div>
     </div>
+    <script>
+        var img = $(".img-modal")
+        $(".photo").each(function(index){
+            $(this).off("click").on("click", function(){
+                $("#myModal").mikesModal();
+                img.attr("src", $(this).attr("src"));
+            });
+        });
+    </script>
     <script src="./js/main.js"></script>
 </body>
 

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./fonts/fontawesome-pro-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/mikes-modal.css">
+    <script src="./js/mikes-modal.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/challenge.css">
     <title>Thử thách: 14 ngày cùng Hiếu XT</title>
@@ -151,7 +153,7 @@
                 <div class="challenge-name">
                     <h1>THỬ THÁCH #10: 14 ngày cùng Hiếu XT</h1>
                 </div>
-                <div class="description">
+                <div class="description-detail">
                     <span>Mô tả: </span><span>Mỗi ngày, tất cả thành viên tham gia thử thách sẽ đăng một hình ảnh về chủ đề con người Việt Nam tại trang này.</span>
                 </div>
             </div>
@@ -824,7 +826,22 @@
         </div>
     </section>
     <!-- The Modal -->
-    
+    <div class="mikes-modal" id="myModal">
+        <img class="img-modal" src="./img/post-img/giotnuoc-bphone.jpg">
+        <div class="description">
+            <h1>Auth</h1>
+            <p>Content</p>
+        </div>
+    </div>
+    <script>
+        var img = $(".img-modal")
+        $(".photo").each(function(index){
+            $(this).off("click").on("click", function(){
+                $("#myModal").mikesModal();
+                img.attr("src", $(this).attr("src"));
+            });
+        });
+    </script>
     <script src="./js/main.js"></script>
 </body>
 

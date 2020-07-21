@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./fonts/fontawesome-pro-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/mikes-modal.css">
+    <script src="./js/mikes-modal.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Macro</title>
     <link rel="icon" href="./img/page/icon.png" type="image/gif">
@@ -825,10 +827,22 @@
         </div>
     </section>
     <!-- The Modal -->
-    <div id="modal-img" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img">
+    <div class="mikes-modal" id="myModal">
+        <img class="img-modal" src="./img/post-img/giotnuoc-bphone.jpg">
+        <div class="description">
+            <h1>Auth</h1>
+            <p>Content</p>
+        </div>
     </div>
+    <script>
+        var img = $(".img-modal")
+        $(".photo").each(function(index){
+            $(this).off("click").on("click", function(){
+                $("#myModal").mikesModal();
+                img.attr("src", $(this).attr("src"));
+            });
+        });
+    </script>
     <script src="./js/main.js"></script>
 </body>
 

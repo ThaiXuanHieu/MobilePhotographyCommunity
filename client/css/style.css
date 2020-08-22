@@ -583,7 +583,7 @@ label {
     font-size: 16px;
     margin: 10px 0px;
     border-radius: 50%;
-    box-shadow: 0 0.15rem 1.75rem 0 rgba(58,59,69,.15);
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, .15);
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -604,7 +604,7 @@ label {
     background-color: white;
     border-radius: 5px;
     padding: 30px;
-    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15);
 }
 
 .btn-center {
@@ -631,4 +631,34 @@ label {
     position: absolute;
     top: 30px;
     left: 55px;
+}
+
+.box-heading {
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 5px 15px;
+    margin-bottom: 5px;
+}
+
+.box-heading.box-heading-challenge {
+    background-image: linear-gradient(to right, #1160b6, #0f5fb9, #105ebd, #125dc0, #155cc3);
+}
+
+.box-heading i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.box-heading.box-heading-category {
+    background-image: linear-gradient(to right, #0faa2e, #11b030, #12b633, #14bd35, #15c338);
+}
+
+.box-heading.box-heading-hint-friend {
+    background-image: linear-gradient(to right, #dd4e68, #e34f70, #e95178, #ef5281, #f4548a);
+}
+
+.box-heading.box-heading-list-friend{
+    background-image: linear-gradient(to right, #c9a243, #d1ac48, #d9b74d, #e1c252, #e8cd57);
 }

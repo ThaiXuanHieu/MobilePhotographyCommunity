@@ -110,11 +110,13 @@ body {
 .category-box,
 .post,
 .hint-friend-box,
-.list-friend-box {
+.list-friend-box,
+.bg-category-box {
     border-radius: 5px;
 }
 
 .challenge-box,
+.bg-category-box,
 .list-friend-box {
     padding: 10px 10px 0px 10px;
 }

@@ -294,12 +294,44 @@ label {
     overflow-wrap: break-word;
 }
 
-.comment-box .other-comment {
+/* .comment-box .other-comment {
     position: relative;
     background-color: #E9EBEE;
     border-radius: 30px;
     padding: 5px 5px 10px 5px;
     margin-bottom: 5px;
+} */
+
+.comment-box .other-comment {
+    position: relative;
+}
+
+.comment-box .other-comment .detail-comment{
+    display: flex;
+    flex-direction: row;
+}
+
+.name {
+    margin: 5px;
+}
+
+.comment-content span {
+    padding: 0px 5px;
+    display: block;
+}
+
+.comment-content {
+    background-color: #E9EBEE;
+    border-radius: 15px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.action-comment {
+    cursor: pointer;
+    position: relative;
+    left: 75px;
+    bottom: 10px;
 }
 
 .comment-box .other-comment a {
@@ -309,18 +341,10 @@ label {
 .comment-box .other-comment .commentedby {
     position: relative;
     margin-right: 10px;
-    float: left;
-}
-
-.comment-box .other-comment .commented-time {
-    position: absolute;
-    left: 55px;
-    top: 30px;
 }
 
 .comment-box .other-comment .comment-content {
-    margin: 12px 0px 12px 10px;
-    word-wrap: break-word;
+    margin: 0px 0px 12px 10px;
 }
 
 .other-comment .comment-option {
